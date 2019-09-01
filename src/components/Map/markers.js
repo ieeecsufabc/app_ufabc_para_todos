@@ -18,13 +18,13 @@ const stands = [
         name: "Stand 1",
         description: "I <3 BCT",
         top: '41%',
-        left: '66.7%'
+        left: '66.77%'
     },
     {
         name: "Stand 2",
         description: "I <3 BCH",
         top: '48%',
-        left: '66.7%'
+        left: '66.77%'
     }
 ]
 

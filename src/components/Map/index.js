@@ -51,8 +51,8 @@ class Map extends Component {
             <Marker
               onPress={() => this.onEventClick(name, description)}
               top={top}
-              width={13}
-              height={13}
+              width="3.1%"
+              height="2.3%"
               left={left}
               color="yellow"
               key={index}
@@ -64,8 +64,8 @@ class Map extends Component {
             <Marker
               onPress={() => this.onEventClick(name, description)}
               top={top}
-              width={57}
-              height={42}
+              width='15.7%'
+              height='8%'
               left={left}
               color="red"
               key={index}

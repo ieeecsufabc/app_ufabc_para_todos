@@ -8,7 +8,7 @@ const rooms = [
     {
         name: "Sala 2",
         description: "IAR é TOP",
-        top: '74%',
+        top: '74.5%',
         left: '30%'
     }
 ]

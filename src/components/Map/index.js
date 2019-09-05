@@ -3,7 +3,7 @@ import {Alert, Image, View, SafeAreaView, Dimensions, PixelRatio} from 'react-na
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Header from '../Header';
 import Marker from './Marker';
-import {rooms, stands} from './markers';
+import {rooms, stands,balcao} from './markers';
 
 class Map extends Component {
   onEventClick = (name, description) => {
@@ -61,27 +61,39 @@ class Map extends Component {
               source={require('../../images/0001.jpg')}
               resizeMode="contain"
             />
-            {stands.map(({name, description, top, left}, index) => (
+            {stands.map(({name, description, top, left, width, height,color}, index) => (
               <Marker
                 onPress={() => this.onEventClick(name, description)}
                 top={top}
-                width="3.1%"
-                height="2.3%"
+                width={width}
+                height={height}
                 left={left}
-                color="yellow"
+                color={color}
                 key={index}
                 text={name}
               />
             ))}
 
-          {rooms.map(({name, description, top, left}, index) => (
+            {rooms.map(({name, description, top, left}, index) => (
               <Marker
                 onPress={() => this.onEventClick(name, description)}
                 top={top}
                 width='15.7%'
                 height='8%'
                 left={left}
-                color="red"
+                color="orange"
+                key={index}
+                text={name}
+              />
+            ))}
+            {balcao.map(({name, description, top, left, width, height,color}, index) => (
+              <Marker
+                onPress={() => this.onEventClick(name, description)}
+                top={top}
+                width={width}
+                height={height}
+                left={left}
+                color={color}
                 key={index}
                 text={name}
               />

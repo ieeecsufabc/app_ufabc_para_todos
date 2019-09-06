@@ -11,6 +11,8 @@
     "@dudigital/react-native-zoomable-view": "^1.0.14",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^4.0.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2"
   },

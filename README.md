@@ -35,7 +35,7 @@ https://facebook.github.io/react-native/docs/running-on-device
 ## How to run the development app in your mobile phone
 
 ### 1- Install app dependencies
-After install all the react-native dependencies you have to install the app dependencies. Enter in the root folder and run:
+After installing all the react-native dependencies you have to install the app dependencies. Enter in the root folder and run:
 ```
 npm install
 ```

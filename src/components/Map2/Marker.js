@@ -17,7 +17,7 @@ const Marker = ({onPress, top, left, color, width, height, text}) => (
         style={{
           position: 'absolute',
           left: '15%',
-          top: '29%',
+          top: '15%',
           fontSize: 14,
           width: '200%',
         }}>

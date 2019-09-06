@@ -29,7 +29,7 @@ class Map extends Component {
   render() {
     return (
       <SafeAreaView style={{flex: 1}}>
-        <Header text="UFABC Para Todos!" />
+        <Header text="MAPA DO PISO VERMELHO" />
         <ReactNativeZoomableView
           maxZoom={2}
           minZoom={.5}
@@ -74,18 +74,6 @@ class Map extends Component {
               />
             ))}
 
-            {rooms.map(({name, description, top, left}, index) => (
-              <Marker
-                onPress={() => this.onEventClick(name, description)}
-                top={top}
-                width='15.7%'
-                height='8%'
-                left={left}
-                color="orange"
-                key={index}
-                text={name}
-              />
-            ))}
             {balcao.map(({name, description, top, left, width, height,color}, index) => (
               <Marker
                 onPress={() => this.onEventClick(name, description)}

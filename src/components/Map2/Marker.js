@@ -12,14 +12,15 @@ const Marker = ({onPress, top, left, color, width, height, text,fontSize}) => (
       top,
       left,
     }}>
-    <View style={{flex: 1, position: 'relative'}}>
+    <View style={{flex: 1, position: 'relative',alignItems: 'center', justifyContent: 'center'}}>
       <Text
         style={{
-          position: 'absolute',
-          left: '15%',
-          top: '29%',
+          position: 'relative',
+          //left: '-39%',
+          //top: '-50%',
+          //transform: [{ rotate: '270deg'}],
           fontSize,
-          width: '200%',
+          //width: '200%',
         }}>
         {text}
       </Text>

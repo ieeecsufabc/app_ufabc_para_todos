@@ -4,4 +4,4 @@ import Map from './src/components/Map'
 import Map2 from './src/components/Map2'
 
 
-AppRegistry.registerComponent(appName, () => Map);
+AppRegistry.registerComponent(appName, () => Map2);

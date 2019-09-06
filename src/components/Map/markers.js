@@ -85,7 +85,7 @@ const stands = [
 const balcao = [
     {
         name: "B1",
-        description: "Não faço ideia!",
+        description: "1) IEEE\n2) Grupo de Pesquisa em Segurança, Violência e Justiça-SEVIJU\n3) Clube de Anime UFABC\n4) OSA-UFABC STUDENT CHAPTER",
         top: '59.12%',
         left: '56.71%',
         width: '3.5%',
@@ -95,7 +95,7 @@ const balcao = [
     },
     {
         name: "B2",
-        description: "Não faço ideia!",
+        description: "1) Coletivo Feminista Coletiva UFABC\n2) Lizard Eco Racing\n3) UFABC jr.\n4) Tamandutech",
         top: '69.5%',
         left: '56.71%',
         width: '3.5%',
@@ -105,7 +105,7 @@ const balcao = [
     },
     {
         name: "B3",
-        description: "Não faço ideia!",
+        description: "1) Project Neon\n2) Centro Acadêmico de Políticas Públicas\n3) SAPIENS\n4) Baja UFABC",
         top: '79.9%',
         left: '56.71%',
         width: '3.5%',

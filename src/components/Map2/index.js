@@ -3,7 +3,7 @@ import {Alert, Image, View, SafeAreaView, Dimensions, PixelRatio} from 'react-na
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Header from '../Header';
 import Marker from './Marker';
-import {rooms, stands,balcao} from './markers';
+import {stands,balcao} from './markers';
 
 class Map extends Component {
   onEventClick = (name, description) => {
@@ -32,7 +32,7 @@ class Map extends Component {
         <Header text="MAPA DO PISO VERMELHO" />
         <ReactNativeZoomableView
           maxZoom={2}
-          minZoom={.8}
+          minZoom={.5}
           zoomStep={.5}
           initialZoom={.7}
           bindToBorders={false}
@@ -58,7 +58,7 @@ class Map extends Component {
                 height: PixelRatio.getPixelSizeForLayoutSize(299.81),
                 resizeMode: 'contain'
               }}
-              source={require('../../images/0001.jpg')}
+              source={require('../../images/0002.jpg')}
               resizeMode="contain"
             />
             {stands.map(({name, description, top, left, width, height,color,fontSize}, index) => (

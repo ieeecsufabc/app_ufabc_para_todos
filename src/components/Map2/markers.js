@@ -1,3 +1,18 @@
+/*const rooms = [
+    {
+        name: "Sala 1",
+        description: "Hello - Computer Science!",
+        top: '65%',
+        left: '30%'
+    },
+    {
+        name: "Sala 2",
+        description: "IAR é TOP",
+        top: '74.5%',
+        left: '30%'
+    }
+]*/
+
 const stands = [
     {
         name: "31",
@@ -121,7 +136,7 @@ const balcao = [
         width: '5.5%',
         height: '5%',
         color: "transparent",
-        fontSize: 8
+        fontSize: 14
     },
     {
         name: "EP",
@@ -135,6 +150,19 @@ const balcao = [
     }
 
 ]
+/*{rooms.map(({name, description, top, left}, index) => (
+              <Marker
+                onPress={() => this.onEventClick(name, description)}
+                top={top}
+                width='15.7%'
+                height='8%'
+                left={left}
+                color="transparent"
+                key={index}
+                text={name}
+              />
+            ))}
+*/ 
 export {
     stands,
     balcao

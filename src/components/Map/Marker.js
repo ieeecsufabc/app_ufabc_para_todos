@@ -1,7 +1,7 @@
 import React from 'react';
 import {TouchableOpacity, Text, View} from 'react-native';
 
-const Marker = ({onPress, top, left, color, width, height, text}) => (
+const Marker = ({onPress, top, left, color, width, height, text,fontSize}) => (
   <TouchableOpacity
     onPress={onPress}
     style={{
@@ -12,14 +12,15 @@ const Marker = ({onPress, top, left, color, width, height, text}) => (
       top,
       left,
     }}>
-    <View style={{flex: 1, position: 'relative'}}>
+    <View style={{flex: 1, position: 'relative',alignItems: 'center', justifyContent: 'center'}}>
       <Text
         style={{
-          position: 'absolute',
-          left: '15%',
-          top: '29%',
-          fontSize: 14,
-          width: '200%',
+          position: 'relative',
+          //left: '-39%',
+          //top: '-50%',
+          transform: [{ rotate: '270deg'}],
+          fontSize,
+          //width: '200%',
         }}>
         {text}
       </Text>

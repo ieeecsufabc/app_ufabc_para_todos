@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Alert, Image, View, SafeAreaView, Dimensions, PixelRatio} from 'react-native';
+import {Alert, Image, SafeAreaView, PixelRatio} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
-import Header from '../Header';
 import Marker from './Marker';
 import {stands,balcao} from './markers';
 
@@ -29,66 +28,59 @@ class Map extends Component {
   render() {
     return (
       <SafeAreaView style={{flex: 1}}>
-        <Header text="MAPA DO PISO VERMELHO" />
         <ReactNativeZoomableView
           maxZoom={2}
           minZoom={.5}
           zoomStep={.5}
           initialZoom={.7}
           bindToBorders={false}
-          onZoomAfter={this.logOutZoomState}
+          doubleTapDelay={0}
+          longPressDuration={1100}
           style={{
+            position: 'relative',
+            flex: 0,
             width: PixelRatio.getPixelSizeForLayoutSize(212),
             height: PixelRatio.getPixelSizeForLayoutSize(299.81),
+            justifyContent: 'center'
           }}
         >
-          <View
+          <Image
             style={{
-              position: 'relative',
-              flex: 0,
+              flex:0,
               width: PixelRatio.getPixelSizeForLayoutSize(212),
               height: PixelRatio.getPixelSizeForLayoutSize(299.81),
-              justifyContent: 'center'
+              resizeMode: 'contain'
             }}
-          >
-            <Image
-              style={{
-                flex:0,
-                width: PixelRatio.getPixelSizeForLayoutSize(212),
-                height: PixelRatio.getPixelSizeForLayoutSize(299.81),
-                resizeMode: 'contain'
-              }}
-              source={require('../../images/0002.jpg')}
-              resizeMode="contain"
+            source={require('../../../assets/0002.jpg')}
+            resizeMode="contain"
+          />
+          {stands.map(({name, description, top, left, width, height,color,fontSize}, index) => (
+            <Marker
+              onPress={() => this.onEventClick(name, description)}
+              top={top}
+              width={width}
+              height={height}
+              left={left}
+              color={color}
+              fontSize={fontSize}
+              key={index}
+              text={name}
             />
-            {stands.map(({name, description, top, left, width, height,color,fontSize}, index) => (
-              <Marker
-                onPress={() => this.onEventClick(name, description)}
-                top={top}
-                width={width}
-                height={height}
-                left={left}
-                color={color}
-                fontSize={fontSize}
-                key={index}
-                text={name}
-              />
-            ))}
+          ))}
 
-            {balcao.map(({name, description, top, left, width, height,color,fontSize}, index) => (
-              <Marker
-                onPress={() => this.onEventClick(name, description)}
-                top={top}
-                width={width}
-                height={height}
-                left={left}
-                color={color}
-                fontSize={fontSize}                
-                key={index}
-                text={name}
-              />
-            ))}
-          </View>
+          {balcao.map(({name, description, top, left, width, height,color,fontSize}, index) => (
+            <Marker
+              onPress={() => this.onEventClick(name, description)}
+              top={top}
+              width={width}
+              height={height}
+              left={left}
+              color={color}
+              fontSize={fontSize}                
+              key={index}
+              text={name}
+            />
+          ))}
         </ReactNativeZoomableView>
       </SafeAreaView>
     );

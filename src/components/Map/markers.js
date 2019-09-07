@@ -7,7 +7,6 @@ const stands = [
         width: "3.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14,
         fontSize: 14
     },
     {

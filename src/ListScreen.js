@@ -3,7 +3,7 @@ import { Text, StyleSheet, FlatList } from 'react-native';
 
 const ListScreen = () => {
   const events = [
-    { name: 'Event #1' },
+    { name: 'O PRIMEIRO EVENTO DO DIA SERÁ AGRADECER PELO PESSOAL DO IEEE POR TEREM FEITO ESSE MARAVILHOSO APP!' },
     { name: 'Event #2' },
     { name: 'Event #3' },
     { name: 'Event #4' },
@@ -31,7 +31,16 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    marginVertical: 50
+    marginVertical: 10,
+    margin: 30,
+    fontSize: 18,
+    padding: 20,
+    alignItems: 'center',
+    justifyContent : 'center',
+    backgroundColor : '#F53',
+    borderRadius: 20,
+    color: 'white'
+    //fontFamily :'OpenSans'
   }
 });
 

@@ -9,12 +9,12 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
     List: ListScreen,
     BlocoA: Map,
-    Quadra: Map2
+    Quadra: Map2 //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
   },
   {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: 'App'
+      title: 'UFABC PARA TODOS - 2019'
     }
   }
 );

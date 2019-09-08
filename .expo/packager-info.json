@@ -1,10 +1,1 @@
-{
-  "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 14127,
-  "expoServerNgrokUrl": "https://pn-brf.anonymous.app-ufabc-para-todos.exp.direct",
-  "packagerNgrokUrl": "https://packager.pn-brf.anonymous.app-ufabc-para-todos.exp.direct",
-  "ngrokPid": 14212,
-  "webpackServerPort": null
-}
+{}

@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, StyleSheet ,Button } from 'react-native';
+import { View, StyleSheet ,Button,ImageBackground } from 'react-native';
+import Background from './components/Background'
 
 const HomeScreen = ({ navigation }) => {
   return (
+    <Background>
     <View>
       <Button
         title="Lista"
@@ -17,6 +19,7 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate('Quadra')}
       />
     </View>
+    </Background>
   );
 };
 const styles = StyleSheet.create({

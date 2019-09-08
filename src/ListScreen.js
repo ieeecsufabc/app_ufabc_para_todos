@@ -3,15 +3,41 @@ import { Text, StyleSheet, FlatList } from 'react-native';
 
 const ListScreen = () => {
   const events = [
-    { name: 'O PRIMEIRO EVENTO DO DIA SERÁ AGRADECER PELO PESSOAL DO IEEE POR TEREM FEITO ESSE MARAVILHOSO APP!' },
-    { name: 'Event #2' },
-    { name: 'Event #3' },
-    { name: 'Event #4' },
-    { name: 'Event #5' },
-    { name: 'Event #6' },
-    { name: 'Event #7' },
-    { name: 'Event #8' },
-    { name: 'Event #9' }
+    { 
+      name: 'O PRIMEIRO EVENTO DO DIA SERÁ AGRADECER PELO PESSOAL DO IEEE POR TEREM FEITO ESSE MARAVILHOSO APP!',
+      description:''
+  },
+    { 
+      name: 'Event #2',
+      description:''
+  },
+    { 
+      name: 'Event #3',
+      description:''
+  },
+    { 
+      name: 'Event #4',
+      description:''
+  },
+    { 
+      name: 'Event #5',
+      description:''
+  },
+    { 
+      name: 'Event #6',
+      description:''
+  },
+    { 
+      name: 'Event #7',
+      description:''
+  },
+    { 
+      name: 'Event #8',
+      description:''
+  },
+    { name: 'Event #9',
+      description:''
+     }
   ];
 
   return (

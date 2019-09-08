@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Alert, Image, SafeAreaView, PixelRatio} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Marker from './Marker';
-import {stands,balcao} from './markers';
+import { ginasioBalcoes, ginasioStands } from '../../data/markers';
 
 class Map extends Component {
   onEventClick = (name, description) => {
@@ -54,7 +54,7 @@ class Map extends Component {
             source={require('../../../assets/0002.jpg')}
             resizeMode="contain"
           />
-          {stands.map(({name, description, top, left, width, height,color,fontSize}, index) => (
+          {ginasioStands.map(({name, description, top, left, width, height,color,fontSize}, index) => (
             <Marker
               onPress={() => this.onEventClick(name, description)}
               top={top}
@@ -68,7 +68,7 @@ class Map extends Component {
             />
           ))}
 
-          {balcao.map(({name, description, top, left, width, height,color,fontSize}, index) => (
+          {ginasioBalcoes.map(({name, description, top, left, width, height,color,fontSize}, index) => (
             <Marker
               onPress={() => this.onEventClick(name, description)}
               top={top}

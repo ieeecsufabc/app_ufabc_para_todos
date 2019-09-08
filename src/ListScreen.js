@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'center',
     justifyContent : 'center',
-    backgroundColor : '#F53',
+    backgroundColor : '#fba930',
     borderRadius: 20,
     color: 'white'
     //fontFamily :'OpenSans'

@@ -16,11 +16,8 @@ const Marker = ({onPress, top, left, color, width, height, text,fontSize}) => (
       <Text
         style={{
           position: 'relative',
-          //left: '-39%',
-          //top: '-50%',
           transform: [{ rotate: '270deg'}],
           fontSize,
-          //width: '200%',
         }}>
         {text}
       </Text>

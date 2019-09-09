@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,ImageBackground } from 'react-native';
+import { StyleSheet, ImageBackground } from 'react-native';
 
 const Background= ({ children }) => {
   return (
@@ -8,6 +8,7 @@ const Background= ({ children }) => {
     </ImageBackground>
   );
 };
+
 const styles = StyleSheet.create({
   BGStyle: {
     width: '100%',

@@ -1,20 +1,23 @@
 import React from 'react';
-import { View, StyleSheet,Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Dimensions } from 'react-native';
 import Background from './components/Background';
+import ScaledImg from './components/ScaledImg';
 
 const HomeScreen = ({ navigation }) => {
   return (
     <Background>
       <View style={styles.Odin}>
-        
-        <Image source={require('../assets/logo.png')} style={styles.Logostyle} resizeMode='contain' backgroundColor='red'/>
-        
+        <ScaledImg
+          source={require('../assets/logo.png')}
+          width={Dimensions.get('window').width * .8}
+        />
+
         <View style={styles.boxbutton}>
           <TouchableOpacity
             style={styles.button}
             onPress={() => navigation.navigate('List')}
           >
-          <Text style={styles.stext}>
+            <Text style={styles.stext}>
               Lista de Estandes
             </Text>
           </TouchableOpacity>
@@ -22,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
             style={styles.button}
             onPress={() => navigation.navigate('BlocoA')}
           >
-          <Text style={styles.stext}>
+            <Text style={styles.stext}>
               Bloco A
             </Text>
           </TouchableOpacity>
@@ -48,37 +51,35 @@ const HomeScreen = ({ navigation }) => {
     </Background>
   );
 };
+
 const styles = StyleSheet.create({
-  Odin:{
+  Odin: {
     position: 'relative',
-//    flex: 1,
     alignItems: 'center',
-    justifyContent:'space-evenly',
-  },
-  Logostyle:{
-    width: "80%",
+    justifyContent: 'space-around',
+    flex: 1
   },
   button: {
     backgroundColor: '#806cfa',
     height: 90,
     width: '46%',
-    flex: 0, 
+    flex: 0,
     marginBottom: 10,
     borderRadius: 20,
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
-  boxbutton:{
+  boxbutton: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent : 'space-around'
+    justifyContent: 'space-around'
   },
-  stext:{
+  stext: {
     position: 'relative',
     textAlign: "center",
     fontSize: 25,
     color: 'white'
-    //width: '200%',
   }
 });
+
 export default HomeScreen;

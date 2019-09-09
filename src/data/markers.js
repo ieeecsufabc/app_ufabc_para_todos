@@ -3,81 +3,81 @@ const blocoAStands = [
         name: "31",
         description: "Pró-Reitoria Pós/Mestrado em C&T Ambiental",
         top: '38.35%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "32",
         description: "Programa de Pós-Graduação em Evolução e Diversidade",
         top: '40.9%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "33",
         description: "Mestrado em Relações Internacionais (PG-PRI)",
         top: '43.49%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14 
+        fontSize: 10 
     },
     {
         name: "34",
         description: "Curso de Pós-graduação em Energia",
         top: '46.12%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14  
+        fontSize: 10  
     },
     {
         name: "35",
         description: "Programa de Pós-graduação em Biossistemas",
         top: '48.72%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14    
+        fontSize: 10    
     },
     {
         name: "36",
         description: "Pós-Graduação em Física",
         top: '51.32%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14    
+        fontSize: 10    
     },
     {
         name: "37",
         description: "NETEL",
         top: '53.92%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14    
+        fontSize: 10    
     },
     {
         name: "38",
         description: "Programa de Educação Tutorial PET Ciência, Tecnologia e Inovaçâo",
         top: '56.52%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
         color: "transparent",
-        fontSize: 14    
+        fontSize: 10    
     }
 ]
 
@@ -86,38 +86,38 @@ const blocoABalcoes = [
         name: "B1",
         description: "1) IEEE\n2) Grupo de Pesquisa em Segurança, Violência e Justiça-SEVIJU\n3) Clube de Anime UFABC\n4) OSA-UFABC STUDENT CHAPTER",
         top: '59.12%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "B2",
         description: "1) Coletivo Feminista Coletiva UFABC\n2) Lizard Eco Racing\n3) UFABC jr.\n4) Tamandutech",
         top: '69.5%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "B3",
         description: "1) Project Neon\n2) Centro Acadêmico de Políticas Públicas\n3) SAPIENS\n4) Baja UFABC",
         top: '79.9%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "Credenciamento",
         description: "Venha fazer o seu credenciamento aqui!",
         top: '20%',
-        left: '42.1%',
-        width: '8.5%',
+        left: '39%',
+        width: '12%',
         height: '8%',
         color: "transparent",
         fontSize: 10
@@ -126,11 +126,11 @@ const blocoABalcoes = [
         name: "EP",
         description: "Conheça a Escola Preparatória da UFABC!",
         top: '22.1%',
-        left: '11%',
+        left: '0.5%',
         width: '4.5%',
         height: '5.3%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     }
 
 ]
@@ -144,7 +144,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.15%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "2",
@@ -154,7 +154,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.15%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "3",
@@ -164,7 +164,7 @@ const ginasioStands = [
         width: "6%",
         height: "7.95%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "4",
@@ -174,7 +174,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.15%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "5",
@@ -184,7 +184,7 @@ const ginasioStands = [
         width: "6%",
         height: "7.92%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "6",
@@ -194,7 +194,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {//inferior
         name: "7",
@@ -204,7 +204,7 @@ const ginasioStands = [
         width: "11.3%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "8",
@@ -214,7 +214,7 @@ const ginasioStands = [
         width: "11.3%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "9",
@@ -224,7 +224,7 @@ const ginasioStands = [
         width: "11.3%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "10",
@@ -234,7 +234,7 @@ const ginasioStands = [
         width: "11.3%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "11",
@@ -244,7 +244,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {//direita inferior
         name: "12",
@@ -254,7 +254,7 @@ const ginasioStands = [
         width: "6.5%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "13",
@@ -264,7 +264,7 @@ const ginasioStands = [
         width: "6.5%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "14",
@@ -274,7 +274,7 @@ const ginasioStands = [
         width: "6.5%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {//direita superior
         name: "15",
@@ -284,7 +284,7 @@ const ginasioStands = [
         width: "6.5%",
         height: "4.15%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "16",
@@ -294,7 +294,7 @@ const ginasioStands = [
         width: "6%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "17",
@@ -304,7 +304,7 @@ const ginasioStands = [
         width: "6%",
         height: "4.0%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "18",
@@ -314,7 +314,7 @@ const ginasioStands = [
         width: "6%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {// superior
         name: "19",
@@ -324,7 +324,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "20",
@@ -334,7 +334,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "21",
@@ -344,7 +344,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "22",
@@ -354,7 +354,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "23",
@@ -364,7 +364,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "24",
@@ -374,7 +374,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "25",
@@ -384,7 +384,7 @@ const ginasioStands = [
         width: "5.7%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "26",
@@ -394,7 +394,7 @@ const ginasioStands = [
         width: "11.3%",
         height: "4.3%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {//esquerda superior
         name: "27",
@@ -404,7 +404,7 @@ const ginasioStands = [
         width: "6%",
         height: "8%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "28",
@@ -414,7 +414,7 @@ const ginasioStands = [
         width: "6%",
         height: "8%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "29",
@@ -424,7 +424,7 @@ const ginasioStands = [
         width: "6%",
         height: "8%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     },
     {
         name: "30",
@@ -434,7 +434,7 @@ const ginasioStands = [
         width: "6%",
         height: "8.2%",
         color: "transparent",
-        fontSize: 18
+        fontSize: 10
     }
 ]
 
@@ -447,7 +447,7 @@ const ginasioBalcoes = [
         width: '11.5%',
         height: '12.5%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "EDITORA UFABC",
@@ -457,7 +457,7 @@ const ginasioBalcoes = [
         width: '14%',
         height: '4.99%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "Credenciamento",
@@ -467,7 +467,7 @@ const ginasioBalcoes = [
         width: '12%',
         height: '4.5%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     },
     {
         name: "PROEC",
@@ -477,7 +477,7 @@ const ginasioBalcoes = [
         width: '18%',
         height: '4.99%',
         color: "transparent",
-        fontSize: 14
+        fontSize: 10
     }
 
 ]

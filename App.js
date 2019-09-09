@@ -9,8 +9,8 @@ const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     List: ListScreen,
-    Eventos: Map,
-    Mapas: Map2,     //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
+    BlocoA: Map,
+    Ginasio: Map2,     //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
     ComoChegar: HowToGetScreen,
   },
   {

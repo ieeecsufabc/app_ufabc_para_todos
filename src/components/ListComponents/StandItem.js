@@ -20,7 +20,7 @@ const StandItem = ({ title, standNumber, builder, navigation }) => {
                     <TouchableOpacity 
                         style={styles.verNoMapa}
                         onPress={() => {
-                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Quadra';
+                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Ginasio';
                             navigation.navigate(route)
                         }}
                     >

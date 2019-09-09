@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Alert, Image, SafeAreaView, PixelRatio} from 'react-native';
+import {Alert, Image, SafeAreaView, PixelRatio, Dimensions} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Marker from './Marker';
 import { ginasioBalcoes, ginasioStands } from '../../data/markers';
@@ -30,25 +30,31 @@ class Map extends Component {
       <SafeAreaView style={{flex: 1}}>
         <ReactNativeZoomableView
           maxZoom={2}
-          minZoom={.5}
+          minZoom={.9}
           zoomStep={.5}
-          initialZoom={.7}
-          bindToBorders={false}
+          initialZoom={.9}
+          bindToBorders={true}
           doubleTapDelay={0}
           longPressDuration={1100}
           style={{
             position: 'relative',
             flex: 0,
-            width: PixelRatio.getPixelSizeForLayoutSize(212),
-            height: PixelRatio.getPixelSizeForLayoutSize(299.81),
+            // width: PixelRatio.getPixelSizeForLayoutSize(212),
+            // height: PixelRatio.getPixelSizeForLayoutSize(299.81),
+            width: Dimensions.get('window').width,
+            height: Dimensions.get('window').height,
+            marginRight: 50,
             justifyContent: 'center'
           }}
         >
           <Image
             style={{
               flex:0,
-              width: PixelRatio.getPixelSizeForLayoutSize(212),
-              height: PixelRatio.getPixelSizeForLayoutSize(299.81),
+              // width: PixelRatio.getPixelSizeForLayoutSize(212),
+              // height: PixelRatio.getPixelSizeForLayoutSize(299.81),
+              width: Dimensions.get('window').width,
+              height: Dimensions.get('window').height,
+              marginRight: 50,
               resizeMode: 'contain'
             }}
             source={require('../../../assets/0002.jpg')}
@@ -76,7 +82,7 @@ class Map extends Component {
               height={height}
               left={left}
               color={color}
-              fontSize={fontSize}                
+              fontSize={fontSize}
               key={index}
               text={name}
             />

@@ -4,9 +4,7 @@ import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 
 const StandItem = ({ title, standNumber, builder, navigation }) => {
     return (
-        <View
-            style={styles.boxStyle}
-        >
+        <View style={styles.boxStyle}>
             <Text style={{ 
                 ...styles.boxTitle,
                 ...styles.purpleText

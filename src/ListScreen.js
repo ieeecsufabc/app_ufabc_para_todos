@@ -2,12 +2,7 @@ import React from 'react';
 import { StyleSheet, FlatList, View } from 'react-native';
 import StandItem from './components/ListComponents/StandItem'
 import Background from './components/Background'
-import {
-  blocoABalcoes,
-  blocoAStands,
-  ginasioBalcoes,
-  ginasioStands
-} from './data/markers';
+import { blocoABalcoes, blocoAStands, ginasioBalcoes, ginasioStands} from './data/markers';
 
 const allMapItems = [
   ...[

@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Dimensions } from 'react-native';
+import { View, StyleSheet, Text, Dimensions } from 'react-native';
 import Background from './components/Background';
 import ScaledImg from './components/ScaledImg';
 
-const HomeScreen = ({ navigation }) => {
+const HowToGetScreen = ({ navigation }) => {
   return (
     <Background>
 
@@ -14,38 +14,19 @@ const HomeScreen = ({ navigation }) => {
         />
 
         <View style={styles.boxbutton}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigation.navigate('List')}
-          >
             <Text style={styles.stext}>
               Estandes
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigation.navigate('Eventos')}
-          >
+
             <Text style={styles.stext}>
               Eventos
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigation.navigate('Mapas')}
-          >
             <Text style={styles.stext}>
               Mapas
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigation.navigate('ComoChegar')}
-          >
             <Text style={styles.stext}>
               Como chegar
             </Text>
-          </TouchableOpacity>
         </View>
 
       </View>
@@ -83,4 +64,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default HomeScreen;
+export default HowToGetScreen;

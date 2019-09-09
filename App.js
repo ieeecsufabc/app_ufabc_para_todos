@@ -3,13 +3,15 @@ import HomeScreen from './src/HomeScreen';
 import ListScreen from './src/ListScreen';
 import Map from './src/components/Map';
 import Map2 from './src/components/Map2';
+import HowToGetScreen from './src/HowToGetScreen';
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     List: ListScreen,
-    BlocoA: Map,
-    Quadra: Map2 //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
+    Eventos: Map,
+    Mapas: Map2,     //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
+    ComoChegar: HowToGetScreen,
   },
   {
     initialRouteName: 'Home',

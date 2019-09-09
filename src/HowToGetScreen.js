@@ -19,7 +19,7 @@ const HowToGetScreen = ({ navigation }) => {
           source={require('../assets/foto-mapa.png')}
           width={Dimensions.get('window').width * .6}
         />
-        <Text>*Pegar o trem até a estação Celso Daniel
+        <Text>*pegar o trem até a estação Celso Daniel
         </Text>
         <Text>
           *Descer a escada dentro do terminal

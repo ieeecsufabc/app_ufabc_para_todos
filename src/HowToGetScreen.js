@@ -2,34 +2,54 @@ import React from 'react';
 import { View, StyleSheet, Text, Dimensions } from 'react-native';
 import Background from './components/Background';
 import ScaledImg from './components/ScaledImg';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const HowToGetScreen = ({ navigation }) => {
   return (
     <Background>
-
-      <View style={styles.Odin}>
+      <ScrollView>
+      <Text>
+      Local:Campus	Santo	André  Avenida	dos	Estados, 5001	-	Bairro	Santa Terezinha	-	Santo	André CEP:	09210-580
+      </Text>
+      <Text style={styles.bigText}>
+        Transporte público
+      </Text>
+          <View style={styles.Odin}>
         <ScaledImg
-          source={require('../assets/logo.png')}
-          width={Dimensions.get('window').width * .8}
+          source={require('../assets/foto-mapa.png')}
+          width={Dimensions.get('window').width * .6}
         />
-
-        <View style={styles.boxbutton}>
-            <Text style={styles.stext}>
-              Estandes
-            </Text>
-
-            <Text style={styles.stext}>
-              Eventos
-            </Text>
-            <Text style={styles.stext}>
-              Mapas
-            </Text>
-            <Text style={styles.stext}>
-              Como chegar
-            </Text>
+        <Text>*Pegar o trem até a estação Celso Daniel
+        </Text>
+        <Text>
+          *Descer a escada dentro do terminal
+        </Text>
         </View>
 
-      </View>
+        <View style={styles.Odin}>
+        <ScaledImg
+          source={require('../assets/foto-mapa.png')}
+          width={Dimensions.get('window').width * .6}
+        />
+        <Text>*Virar a direita e suba a rampa</Text>
+        </View>
+
+        <View style={styles.Odin}>
+        <ScaledImg
+          source={require('../assets/foto-mapa.png')}
+          width={Dimensions.get('window').width * .6}
+        />
+        <Text>Você pode escolher entre ir de fretado ou andando</Text>
+        </View>
+
+        <View style={styles.Odin}>
+        <ScaledImg
+          source={require('../assets/foto-mapa.png')}
+          width={Dimensions.get('window').width * .6}
+        />
+        <Text>textinho4</Text>
+        </View>
+        </ScrollView>
     </Background>
   );
 };
@@ -39,7 +59,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1
+    flex: 0
   },
   button: {
     backgroundColor: '#806cfa',
@@ -61,6 +81,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 25,
     color: 'white'
+  },
+  bigText:{
+    position:'relative',
+    textAlign:"center",
+    fontSize: 45,
+    color:'black'
   }
 });
 

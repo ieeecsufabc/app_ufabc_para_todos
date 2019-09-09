@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 
 
-const StandItem = ({ title, standNumber, builder }) => {
+const StandItem = ({ title, standNumber, builder, navigation }) => {
     return (
         <View
             style={styles.boxStyle}
@@ -11,14 +11,21 @@ const StandItem = ({ title, standNumber, builder }) => {
                 ...styles.boxTitle,
                 ...styles.purpleText
             }}
-            >Ciência da Computação</Text>
+            >{title}</Text>
             <View style={styles.boxLocation}>
                 <View style={styles.boxLocationName}>
-                    <Text style={styles.purpleText}>Estante 01</Text>
-                    <Text style={styles.purpleText}>Bloco A</Text>
+                    <Text style={styles.purpleText}>
+                        {Number.isInteger(standNumber) ? `Estande ${standNumber}` : standNumber}</Text>
+                    <Text style={styles.purpleText}>{builder}</Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.verNoMapa}>
+                    <TouchableOpacity 
+                        style={styles.verNoMapa}
+                        onPress={() => {
+                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Quadra';
+                            navigation.navigate(route)
+                        }}
+                    >
                         <Text style={styles.verNoMapaText}>Ver no mapa</Text>
                     </TouchableOpacity>
                 </View>

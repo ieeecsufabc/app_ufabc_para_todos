@@ -12,9 +12,6 @@ const HowToGetScreen = ({ navigation }) => {
   return (
     
     <Background >
-
-
-
       <ScrollView>
        
       <View style={styles.Odin}>

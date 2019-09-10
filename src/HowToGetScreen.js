@@ -28,7 +28,7 @@ const HowToGetScreen = ({ navigation }) => {
         Abrir no google maps
       </Text>
       </TouchableOpacity>
-      <Text >
+      <Text style={styles.infoText}>
         
       Local:Campus	Santo	André  Avenida	dos	Estados, 5001	-	Bairro	Santa Terezinha	-	Santo	André CEP:	09210-580
       </Text></View>
@@ -41,9 +41,9 @@ const HowToGetScreen = ({ navigation }) => {
           source={require('../assets/foto-mapa.png')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text>*Pegar o trem até a estação Celso Daniel
+        <Text style={styles.infoText}>*Pegar o trem até a estação Celso Daniel
         </Text>
-        <Text>
+        <Text style={styles.infoText}>
           *Descer a escada dentro do terminal
         </Text>
         </View>
@@ -53,7 +53,7 @@ const HowToGetScreen = ({ navigation }) => {
           source={require('../assets/foto-mapa.png')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text>*Virar a direita e suba a rampa</Text>
+        <Text style={styles.infoText}>*Vire a direita e suba a rampa</Text>
         </View>
 
         <View style={styles.Odin}>
@@ -61,7 +61,7 @@ const HowToGetScreen = ({ navigation }) => {
           source={require('../assets/foto-mapa.png')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text>*Você pode escolher entre ir de fretado ou andando</Text>
+        <Text style={styles.infoText}>*Você pode escolher entre ir de fretado ou andando</Text>
         </View>
 
         <View style={styles.Odin}>
@@ -69,7 +69,14 @@ const HowToGetScreen = ({ navigation }) => {
           source={require('../assets/foto-mapa.png')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text>texto 4</Text>
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('Itinerario')}
+          >
+            <Text style={styles.stext}>
+              Itinerário do fretado
+            </Text>
+          </TouchableOpacity>
         </View>
         </ScrollView>
     </Background>
@@ -81,17 +88,19 @@ const styles = StyleSheet.create({
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1
+    flex: 1,
+    fontSize:40,
+    marginBottom:25
   },
   button: {
     position:'relative',
-    backgroundColor: '#752bff',
-    height: 90,
-    width: '46%',
+    backgroundColor: '#2c6633',
+    height: 50,
+    width: '70%',
     flex: 1,
     marginTop:10,
     marginBottom: 10,
-    borderRadius: 20,
+    borderRadius: 14,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -109,9 +118,17 @@ const styles = StyleSheet.create({
   bigText:{
     position:'relative',
     textAlign:"center",
-    fontSize: 45,
+    fontSize: 40,
     color:'black'
-  }
+  },
+  infoText: {
+    position: 'relative',
+    textAlign: "center",
+    fontSize: 18,
+    color: 'black',
+    width:'90%'
+  },
+
 });
 
 export default HowToGetScreen;

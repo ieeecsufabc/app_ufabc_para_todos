@@ -8,6 +8,7 @@ import HowToGetScreen from './src/HowToGetScreen';
 import MapsScreen from './src/MapsScreen'; 
 import AboutScreen from './src/AboutScreen';
 import IEEEScreen from './src/IEEEScreen';
+import ItinerarioScreen from './src/ItinerarioScreen';
 
 const navigator = createStackNavigator(
   {
@@ -19,7 +20,8 @@ const navigator = createStackNavigator(
     Ginasio: Map2,     //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
     ComoChegar: HowToGetScreen,
     About: AboutScreen,
-    IEEE: IEEEScreen
+    IEEE: IEEEScreen,
+    Itinerario: ItinerarioScreen
   },
   {
     initialRouteName: 'Home',

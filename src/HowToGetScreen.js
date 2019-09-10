@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   },
   button: {
     position:'relative',
-    backgroundColor: '#806cfa',
+    backgroundColor: '#752bff',
     height: 90,
     width: '46%',
     flex: 1,

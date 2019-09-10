@@ -6,6 +6,8 @@ import Map from './src/components/Map';
 import Map2 from './src/components/Map2';
 import HowToGetScreen from './src/HowToGetScreen';
 import MapsScreen from './src/MapsScreen'; 
+import AboutScreen from './src/AboutScreen';
+import IEEEScreen from './src/IEEEScreen';
 
 const navigator = createStackNavigator(
   {
@@ -16,8 +18,8 @@ const navigator = createStackNavigator(
     BlocoA: Map,
     Ginasio: Map2,     //precisamos colocar um item na lista para uma lista de stands e tals, para que dessa lista a pessoa consiga acessar o mapa
     ComoChegar: HowToGetScreen,
-    BlocoA: Map,
-    Ginasio: Map2
+    About: AboutScreen,
+    IEEE: IEEEScreen
   },
   {
     initialRouteName: 'Home',

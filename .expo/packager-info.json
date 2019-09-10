@@ -1,9 +1,18 @@
 {
   "devToolsPort": 19002,
+<<<<<<< HEAD
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
   "expoServerNgrokUrl": null,
   "packagerNgrokUrl": null,
   "ngrokPid": null
+=======
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 22366,
+  "expoServerNgrokUrl": "https://c2-rhw.anonymous.app-ufabc-para-todos.exp.direct",
+  "packagerNgrokUrl": "https://packager.c2-rhw.anonymous.app-ufabc-para-todos.exp.direct",
+  "ngrokPid": 22389
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
 }

@@ -22,12 +22,16 @@ const ListScreen = ({ navigation }) => {
         <FlatList
           // keyExtractor={event => event.name}
           data={allMapItems}
-          renderItem={({ item: { name, description, builder } }) => {
+          renderItem={({ item: { name, description, builder, top, left, width, height } }) => {
             return <StandItem
               title={description}
               builder={builder}
               standNumber={name}
               navigation={navigation}
+              top={top}
+              left={left}
+              width={width}
+              height={height}
             />;
           }}
         />

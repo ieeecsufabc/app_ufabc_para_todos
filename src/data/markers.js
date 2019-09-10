@@ -3,81 +3,121 @@ const blocoAStands = [
         name: "31",
         description: "Pró-Reitoria Pós/Mestrado em C&T Ambiental",
         top: '38.35%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "32",
         description: "Programa de Pós-Graduação em Evolução e Diversidade",
         top: '40.9%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "33",
         description: "Mestrado em Relações Internacionais (PG-PRI)",
         top: '43.49%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10 
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "34",
         description: "Curso de Pós-graduação em Energia",
         top: '46.12%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10  
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "35",
         description: "Programa de Pós-graduação em Biossistemas",
         top: '48.72%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10    
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "36",
         description: "Pós-Graduação em Física",
         top: '51.32%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10    
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "37",
         description: "NETEL",
         top: '53.92%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10    
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "38",
         description: "Programa de Educação Tutorial PET Ciência, Tecnologia e Inovaçâo",
         top: '56.52%',
-        left: '56.71%',
+        left: '59%',
         width: "5.5%",
         height: "2.39%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10    
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     }
 ]
 
@@ -86,38 +126,53 @@ const blocoABalcoes = [
         name: "B1",
         description: "1) IEEE\n2) Grupo de Pesquisa em Segurança, Violência e Justiça-SEVIJU\n3) Clube de Anime UFABC\n4) OSA-UFABC STUDENT CHAPTER",
         top: '59.12%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "B2",
         description: "1) Coletivo Feminista Coletiva UFABC\n2) Lizard Eco Racing\n3) UFABC jr.\n4) Tamandutech",
         top: '69.5%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "B3",
         description: "1) Project Neon\n2) Centro Acadêmico de Políticas Públicas\n3) SAPIENS\n4) Baja UFABC",
         top: '79.9%',
-        left: '56.71%',
+        left: '59%',
         width: '5.5%',
         height: '10.1%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "Credenciamento",
         description: "Venha fazer o seu credenciamento aqui!",
         top: '20%',
-        left: '42.1%',
-        width: '8.5%',
+        left: '39%',
+        width: '12%',
         height: '8%',
         color: "red",
         fontSize: 10
@@ -126,11 +181,16 @@ const blocoABalcoes = [
         name: "EP",
         description: "Conheça a Escola Preparatória da UFABC!",
         top: '22.1%',
-        left: '11%',
+        left: '0.5%',
         width: '4.5%',
         height: '5.3%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     }
 
 ]
@@ -143,8 +203,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "2",
@@ -153,8 +218,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "3",
@@ -163,8 +233,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "7.95%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "4",
@@ -173,8 +248,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "5",
@@ -183,8 +263,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "7.92%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "6",
@@ -193,8 +278,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {//inferior
         name: "7",
@@ -203,8 +293,13 @@ const ginasioStands = [
         left: '30.3%',
         width: "11.3%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "8",
@@ -213,8 +308,13 @@ const ginasioStands = [
         left: '41.6%',
         width: "11.3%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "9",
@@ -223,8 +323,13 @@ const ginasioStands = [
         left: '52.9%',
         width: "11.3%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "10",
@@ -233,8 +338,13 @@ const ginasioStands = [
         left: '64.2%',
         width: "11.3%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "11",
@@ -243,8 +353,13 @@ const ginasioStands = [
         left: '75.5%',
         width: "6%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {//direita inferior
         name: "12",
@@ -253,8 +368,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "13",
@@ -263,8 +383,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "14",
@@ -273,8 +398,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {//direita superior
         name: "15",
@@ -283,8 +413,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "4.15%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "16",
@@ -293,8 +428,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "17",
@@ -303,8 +443,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "4.0%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "18",
@@ -313,8 +458,13 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {// superior
         name: "19",
@@ -323,8 +473,13 @@ const ginasioStands = [
         left: '76.15%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "20",
@@ -333,8 +488,13 @@ const ginasioStands = [
         left: '70.41%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "21",
@@ -343,8 +503,13 @@ const ginasioStands = [
         left: '64.7%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "22",
@@ -353,8 +518,13 @@ const ginasioStands = [
         left: '59.05%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "23",
@@ -363,8 +533,13 @@ const ginasioStands = [
         left: '53.3%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "24",
@@ -373,8 +548,13 @@ const ginasioStands = [
         left: '47.62%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "25",
@@ -383,8 +563,13 @@ const ginasioStands = [
         left: '41.9%',
         width: "5.7%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "26",
@@ -393,8 +578,13 @@ const ginasioStands = [
         left: '30.6%',
         width: "11.3%",
         height: "4.3%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {//esquerda superior
         name: "27",
@@ -403,8 +593,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "28",
@@ -413,8 +608,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "29",
@@ -423,8 +623,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "30",
@@ -433,8 +638,13 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8.2%",
+<<<<<<< HEAD
         color: "red",
         fontSize: 18
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     }
 ]
 
@@ -446,8 +656,13 @@ const ginasioBalcoes = [
         left: '84.91%',
         width: '11.5%',
         height: '12.5%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "EDITORA UFABC",
@@ -456,8 +671,13 @@ const ginasioBalcoes = [
         left: '66.2%',
         width: '14%',
         height: '4.99%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "Credenciamento",
@@ -466,8 +686,13 @@ const ginasioBalcoes = [
         left: '27.5%',
         width: '12%',
         height: '4.5%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     },
     {
         name: "PROEC",
@@ -476,8 +701,13 @@ const ginasioBalcoes = [
         left: '43%',
         width: '18%',
         height: '4.99%',
+<<<<<<< HEAD
         color: "red",
         fontSize: 14
+=======
+        color: "transparent",
+        fontSize: 10
+>>>>>>> 7f76044d6329b4856b45b25ab075bc48e3b244f1
     }
 
 ]

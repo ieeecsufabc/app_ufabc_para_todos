@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {Alert, Image, SafeAreaView, PixelRatio, Dimensions} from 'react-native';
+import {Alert, Image, SafeAreaView, Dimensions} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Marker from './Marker';
+import DefaultMaker from '../DefaultMaker';
 import { ginasioBalcoes, ginasioStands } from '../../data/markers';
+
+const mapImage = require('../../../assets/0002.jpg');
 
 class Map extends Component {
   onEventClick = (name, description) => {
@@ -25,7 +28,17 @@ class Map extends Component {
     );
   }; //...Do the stuff here
 
+  calcImageHeight(windowWidth) {
+    const { width, height } = Image.resolveAssetSource(mapImage);
+
+    return height * (windowWidth / width)
+  }
+
   render() {
+    const windowWidth = Dimensions.get('window').width;
+    const imageHeight = this.calcImageHeight(windowWidth);
+    const defaultMakerPosition = this.props.navigation.getParam('defaultMakerPosition', null);
+
     return (
       <SafeAreaView style={{flex: 1}}>
         <ReactNativeZoomableView
@@ -33,16 +46,14 @@ class Map extends Component {
           minZoom={.9}
           zoomStep={.5}
           initialZoom={.9}
-          bindToBorders={true}
+          bindToBorders={false}
           doubleTapDelay={0}
           longPressDuration={1100}
           style={{
             position: 'relative',
             flex: 0,
-            // width: PixelRatio.getPixelSizeForLayoutSize(212),
-            // height: PixelRatio.getPixelSizeForLayoutSize(299.81),
-            width: Dimensions.get('window').width,
-            height: Dimensions.get('window').height,
+            width: windowWidth,
+            height: imageHeight,
             marginRight: 50,
             justifyContent: 'center'
           }}
@@ -50,14 +61,12 @@ class Map extends Component {
           <Image
             style={{
               flex:0,
-              // width: PixelRatio.getPixelSizeForLayoutSize(212),
-              // height: PixelRatio.getPixelSizeForLayoutSize(299.81),
-              width: Dimensions.get('window').width,
-              height: Dimensions.get('window').height,
+              width: windowWidth,
+              height: imageHeight,
               marginRight: 50,
               resizeMode: 'contain'
             }}
-            source={require('../../../assets/0002.jpg')}
+            source={mapImage}
             resizeMode="contain"
           />
           {ginasioStands.map(({name, description, top, left, width, height,color,fontSize}, index) => (
@@ -87,6 +96,8 @@ class Map extends Component {
               text={name}
             />
           ))}
+
+          {defaultMakerPosition && <DefaultMaker {...defaultMakerPosition} />}
         </ReactNativeZoomableView>
       </SafeAreaView>
     );

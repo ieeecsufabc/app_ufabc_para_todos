@@ -482,9 +482,37 @@ const ginasioBalcoes = [
 
 ]
 
+const eventos = [
+  {
+    name: "Palestra 1",
+    description: "Descrição da palestra 1",
+    location: "Bloco A - sala 1",
+    timetable: "12:00"
+  },
+  {
+    name: "Palestra 2",
+    description: "Descrição da palestra 2",
+    location: "Bloco A - sala 2",
+    timetable: "13:00"
+  },
+  {
+    name: "Palestra 3",
+    description: "Descrição da palestra 3",
+    location: "Bloco A - sala 3",
+    timetable: "14:00"
+  },
+  {
+    name: "Palestra 4",
+    description: "Descrição da palestra 4",
+    location: "Bloco A - sala 4",
+    timetable: "15:00"
+  }
+]
+
 export {
     blocoAStands,
     blocoABalcoes,
     ginasioStands,
-    ginasioBalcoes
+    ginasioBalcoes,
+    eventos
 };

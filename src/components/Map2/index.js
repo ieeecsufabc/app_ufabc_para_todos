@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Alert, Image, SafeAreaView, Dimensions} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Marker from './Marker';
+import DefaultMaker from '../DefaultMaker';
 import { ginasioBalcoes, ginasioStands } from '../../data/markers';
 
 const mapImage = require('../../../assets/0002.jpg');
@@ -36,6 +37,7 @@ class Map extends Component {
   render() {
     const windowWidth = Dimensions.get('window').width;
     const imageHeight = this.calcImageHeight(windowWidth);
+    const defaultMakerPosition = this.props.navigation.getParam('defaultMakerPosition', null);
 
     return (
       <SafeAreaView style={{flex: 1}}>
@@ -94,6 +96,8 @@ class Map extends Component {
               text={name}
             />
           ))}
+
+          {defaultMakerPosition && <DefaultMaker {...defaultMakerPosition} />}
         </ReactNativeZoomableView>
       </SafeAreaView>
     );

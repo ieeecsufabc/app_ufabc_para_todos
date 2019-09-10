@@ -19,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('List')}
           >
             <Text style={styles.stext}>
-              Estandessss
+              Estandes
             </Text>
           </TouchableOpacity>
           <TouchableOpacity

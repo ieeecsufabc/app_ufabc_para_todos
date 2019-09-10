@@ -6,7 +6,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -16,7 +16,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -26,7 +26,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -36,7 +36,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -46,7 +46,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -56,7 +56,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -66,7 +66,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -76,7 +76,7 @@ const blocoAStands = [
         left: '56.71%',
         width: "5.5%",
         height: "2.39%",
-        color: "transparent",
+        color: "red",
         fontSize: 14
     }
 ]
@@ -89,7 +89,7 @@ const blocoABalcoes = [
         left: '56.71%',
         width: '5.5%',
         height: '10.1%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -99,7 +99,7 @@ const blocoABalcoes = [
         left: '56.71%',
         width: '5.5%',
         height: '10.1%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -109,7 +109,7 @@ const blocoABalcoes = [
         left: '56.71%',
         width: '5.5%',
         height: '10.1%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -119,7 +119,7 @@ const blocoABalcoes = [
         left: '42.1%',
         width: '8.5%',
         height: '8%',
-        color: "transparent",
+        color: "red",
         fontSize: 10
     },
     {
@@ -129,7 +129,7 @@ const blocoABalcoes = [
         left: '11%',
         width: '4.5%',
         height: '5.3%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     }
 
@@ -143,7 +143,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -153,7 +153,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -163,7 +163,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "7.95%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -173,7 +173,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.15%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -183,7 +183,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "7.92%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -193,7 +193,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {//inferior
@@ -203,7 +203,7 @@ const ginasioStands = [
         left: '30.3%',
         width: "11.3%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -213,7 +213,7 @@ const ginasioStands = [
         left: '41.6%',
         width: "11.3%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -223,7 +223,7 @@ const ginasioStands = [
         left: '52.9%',
         width: "11.3%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -233,7 +233,7 @@ const ginasioStands = [
         left: '64.2%',
         width: "11.3%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -243,7 +243,7 @@ const ginasioStands = [
         left: '75.5%',
         width: "6%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {//direita inferior
@@ -253,7 +253,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -263,7 +263,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -273,7 +273,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {//direita superior
@@ -283,7 +283,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6.5%",
         height: "4.15%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -293,7 +293,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -303,7 +303,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "4.0%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -313,7 +313,7 @@ const ginasioStands = [
         left: '87.3%',
         width: "6%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {// superior
@@ -323,7 +323,7 @@ const ginasioStands = [
         left: '76.15%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -333,7 +333,7 @@ const ginasioStands = [
         left: '70.41%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -343,7 +343,7 @@ const ginasioStands = [
         left: '64.7%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -353,7 +353,7 @@ const ginasioStands = [
         left: '59.05%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -363,7 +363,7 @@ const ginasioStands = [
         left: '53.3%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -373,7 +373,7 @@ const ginasioStands = [
         left: '47.62%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -383,7 +383,7 @@ const ginasioStands = [
         left: '41.9%',
         width: "5.7%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -393,7 +393,7 @@ const ginasioStands = [
         left: '30.6%',
         width: "11.3%",
         height: "4.3%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {//esquerda superior
@@ -403,7 +403,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -413,7 +413,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -423,7 +423,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     },
     {
@@ -433,7 +433,7 @@ const ginasioStands = [
         left: '24.4%',
         width: "6%",
         height: "8.2%",
-        color: "transparent",
+        color: "red",
         fontSize: 18
     }
 ]
@@ -446,7 +446,7 @@ const ginasioBalcoes = [
         left: '84.91%',
         width: '11.5%',
         height: '12.5%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -456,7 +456,7 @@ const ginasioBalcoes = [
         left: '66.2%',
         width: '14%',
         height: '4.99%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -466,7 +466,7 @@ const ginasioBalcoes = [
         left: '27.5%',
         width: '12%',
         height: '4.5%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     },
     {
@@ -476,7 +476,7 @@ const ginasioBalcoes = [
         left: '43%',
         width: '18%',
         height: '4.99%',
-        color: "transparent",
+        color: "red",
         fontSize: 14
     }
 

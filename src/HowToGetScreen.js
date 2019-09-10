@@ -5,10 +5,6 @@ import ScaledImg from './components/ScaledImg';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const HowToGetScreen = ({ navigation }) => {
-
-
-  
-
   return (
     
     <Background >
@@ -16,22 +12,22 @@ const HowToGetScreen = ({ navigation }) => {
        
       <View style={styles.Odin}>
       <TouchableOpacity
-            style={styles.button}
-            onPress={() => {
-              var url = "https://goo.gl/maps/SzpjLQVn5BrkTNKa6";
-              Linking.canOpenURL(url).then(supported => {
-                  if (!supported) {
-                      console.log('Cant handle url: ' + url);
-                  } else {
-                      return Linking.openURL(url);
-                  }
-              }).catch(err => console.error('An error occurred', err)); 
-            }}
-          >
-            <Text style={styles.stext}>
-              Abrir no google maps
-            </Text>
-          </TouchableOpacity>
+        style={styles.button}
+        onPress={() => {
+          var url = "https://goo.gl/maps/SzpjLQVn5BrkTNKa6";
+          Linking.canOpenURL(url).then(supported => {
+              if (!supported) {
+                  console.log('Cant handle url: ' + url);
+              } else {
+                  return Linking.openURL(url);
+              }
+          }).catch(err => console.error('An error occurred', err)); 
+        }}
+      >
+      <Text style={styles.stext}>
+        Abrir no google maps
+      </Text>
+      </TouchableOpacity>
       <Text >
         
       Local:Campus	Santo	André  Avenida	dos	Estados, 5001	-	Bairro	Santa Terezinha	-	Santo	André CEP:	09210-580

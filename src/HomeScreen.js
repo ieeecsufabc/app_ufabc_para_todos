@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   button: {
-    backgroundColor: '#806cfa',
+    backgroundColor: '#2c6633',
     height: 90,
     width: '46%',
     flex: 0,

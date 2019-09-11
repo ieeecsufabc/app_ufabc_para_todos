@@ -6,24 +6,24 @@ import ScaledImg from './components/ScaledImg';
 
 const IEEEScreen = ({ navigation }) => {
   return (
-    
+
     <Background >
       <ScrollView>
-       
+
       <View style={styles.Odin}>
         <ScaledImg
-          source={require('../assets/logo.png')}
+          source={require('../assets/ieee_resized.png')}
           width={Dimensions.get('window').width * .6}
         />
         <Text style={styles.title}>
             Quem somos nós?
         </Text>
-    </View>   
+    </View>
     <Text style={styles.stext}>
     Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
     </Text>
     <View style={styles.boxbutton}>
-      <TouchableOpacity 
+      <TouchableOpacity
         //style={styles.button}
         onPress={() => {
           var url = "https://pt-br.facebook.com/RamoUFABC/";
@@ -33,7 +33,7 @@ const IEEEScreen = ({ navigation }) => {
             } else {
               return Linking.openURL(url);
             }
-          }).catch(err => console.error('An error occurred', err)); 
+          }).catch(err => console.error('An error occurred', err));
         }}
       >
         <ScaledImg
@@ -42,7 +42,7 @@ const IEEEScreen = ({ navigation }) => {
         />
       </TouchableOpacity>
 
-      <TouchableOpacity 
+      <TouchableOpacity
         //style={styles.button}
         onPress={() => {
           var url = "https://www.instagram.com/ieeeufabc/?hl=pt";
@@ -52,7 +52,7 @@ const IEEEScreen = ({ navigation }) => {
             } else {
               return Linking.openURL(url);
             }
-          }).catch(err => console.error('An error occurred', err)); 
+          }).catch(err => console.error('An error occurred', err));
         }}
       >
         <ScaledImg

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 
 
-const StandItem = ({ title, standNumber, builder, navigation }) => {
+const StandItem = ({ title, standNumber, top, left, width, height, builder, navigation }) => {
     return (
         <View style={styles.boxStyle}>
             <Text style={{ 
@@ -20,8 +20,15 @@ const StandItem = ({ title, standNumber, builder, navigation }) => {
                     <TouchableOpacity 
                         style={styles.verNoMapa}
                         onPress={() => {
-                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Quadra';
-                            navigation.navigate(route)
+                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Ginasio';
+                            navigation.navigate(route, { 
+                                defaultMakerPosition: { 
+                                    top,
+                                    left,
+                                    width,
+                                    height
+                                }
+                            });
                         }}
                     >
                         <Text style={styles.verNoMapaText}>Ver no mapa</Text>

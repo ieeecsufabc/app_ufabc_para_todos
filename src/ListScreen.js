@@ -2,18 +2,7 @@ import React from 'react';
 import { StyleSheet, FlatList, View } from 'react-native';
 import StandItem from './components/ListComponents/StandItem'
 import Background from './components/Background'
-import { blocoABalcoes, blocoAStands, ginasioBalcoes, ginasioStands} from './data/markers';
-
-const allMapItems = [
-  ...[
-    ...blocoABalcoes,
-    ...blocoAStands
-  ].map(item => ({...item, 'builder': 'Bloco A'})),
-  ...[
-    ...ginasioBalcoes,
-    ...ginasioStands
-  ].map(item => ({...item, 'builder': 'Ginásio'})),
-];
+import { allMapItems } from './data/markers';
 
 const ListScreen = ({ navigation }) => {
   return (
@@ -22,12 +11,16 @@ const ListScreen = ({ navigation }) => {
         <FlatList
           // keyExtractor={event => event.name}
           data={allMapItems}
-          renderItem={({ item: { name, description, builder } }) => {
+          renderItem={({ item: { name, description, builder, top, left, width, height } }) => {
             return <StandItem
               title={description}
               builder={builder}
               standNumber={name}
               navigation={navigation}
+              top={top}
+              left={left}
+              width={width}
+              height={height}
             />;
           }}
         />

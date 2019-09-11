@@ -46,7 +46,23 @@ const HomeScreen = ({ navigation }) => {
               Como chegar
             </Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('About')}
+          >
+            <Text style={styles.sobre}>
+              Sobre o Evento
+            </Text>
+          </TouchableOpacity>
+
         </View>
+        <TouchableOpacity
+            style={styles.textbox}
+            onPress={() => navigation.navigate('IEEE')}
+          >
+            <Text style={styles.sobre}>
+              Conheça mais sobre o IEEE
+            </Text>
+          </TouchableOpacity>
 
       </View>
     </Background>
@@ -58,10 +74,10 @@ const styles = StyleSheet.create({
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1
+    flex: 1,
   },
   button: {
-    backgroundColor: '#806cfa',
+    backgroundColor: '#2c6633',
     height: 90,
     width: '46%',
     flex: 0,
@@ -80,7 +96,20 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 25,
     color: 'white'
-  }
+  },
+  textbox: {
+    position: 'relative',
+    flex:0,
+    textAlign: "center",
+  },
+  sobre: {
+    position: 'relative',
+    textAlign: "center",
+    marginTop:10,
+    fontSize: 15,
+    color: '#752bff'
+  },
+
 });
 
 export default HomeScreen;

@@ -1,31 +1,61 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
+import { allMapItems } from '../../data/markers';
 
+const findStandByNumber = (number) => {
+    return allMapItems.find(item => item.name == number)
+}
 
-const EventItem = ({ title, standNumber, builder, navigation }) => {
+const EventItem = ({summary, location, description, start, end, id, navigation}) => {
+    const standNumber = parseInt(location.replace('Stand ', ''));
+    const isStandNumber = Number.isInteger(standNumber);
+    let eventData = null;
+
+    if (isStandNumber) {
+        eventData = findStandByNumber(standNumber);
+    }
+    
     return (
         <View style={styles.boxStyle}>
             <Text style={{
                 ...styles.boxTitle,
                 ...styles.purpleText
             }}
-            >{title}</Text>
+            >{summary}</Text>
             <View style={styles.boxLocation}>
                 <View style={styles.boxLocationName}>
                     <Text style={styles.purpleText}>
-                        {Number.isInteger(standNumber) ? `Estande ${standNumber}` : standNumber}</Text>
-                    <Text style={styles.purpleText}>{builder}</Text>
+                        {isStandNumber ? `Estande ${standNumber}` : location}</Text>
+                        {eventData && eventData.builder && (
+                            <Text style={styles.purpleText}>{eventData.builder}</Text>
+                        )}
+                </View>
+                <View style={styles.boxLocationName}>
+                    <Text style={styles.purpleText}>{start}</Text>
+                    <Text style={styles.purpleText}>{end}</Text>
                 </View>
                 <View>
-                    <TouchableOpacity
-                        style={styles.verNoMapa}
-                        onPress={() => {
-                            const route = builder === 'Bloco A' ? 'BlocoA' : 'Quadra';
-                            navigation.navigate(route)
-                        }}
-                    >
-                        <Text style={styles.verNoMapaText}>Ver no mapa</Text>
-                    </TouchableOpacity>
+                    {eventData && (
+                        
+                        <TouchableOpacity
+                            style={styles.verNoMapa}
+                            onPress={() => {
+                                const { top, left, width, height, builder } = eventData;
+                                const route = builder === 'Bloco A' ? 'BlocoA' : 'Ginasio';
+
+                                navigation.navigate(route, { 
+                                    defaultMakerPosition: { 
+                                        top,
+                                        left,
+                                        width,
+                                        height
+                                    }
+                                });
+                            }}
+                        >
+                            <Text style={styles.verNoMapaText}>Ver no mapa</Text>
+                        </TouchableOpacity>
+                    )}
                 </View>
             </View>
         </View>

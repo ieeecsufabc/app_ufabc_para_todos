@@ -1,39 +1,87 @@
 import React from 'react';
+import axios from 'axios';
 import { StyleSheet, FlatList, View, Text } from 'react-native';
-import StandItem from './components/ListComponents/StandItem'
 import Background from './components/Background'
-import { eventos} from './data/markers';
+import EventItem from './components/ListComponents/EventItem';
 
-// const allMapItems = [
-//   ...[
-//     ...blocoABalcoes,
-//     ...blocoAStands
-//   ].map(item => ({...item, 'builder': 'Bloco A'})),
-//   ...[
-//     ...ginasioBalcoes,
-//     ...ginasioStands
-//   ].map(item => ({...item, 'builder': 'Ginásio'})),
-// ];
+class EventsScreen extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      calendarEvents: [],
+      isLoading: true
+    }
+  }
 
-const EventsScreen = ({ navigation }) => {
-  return (
-    <Background>
-      <View style={styles.container}>
-        <FlatList
-          //keyExtractor={event => event.name}
-          // data={allMapItems}
-          // renderItem=({ item: { name, description, builder } }) => {
-          //   return <EventItem
-          //     title={description}
-          //     builder={builder}
-          //     standNumber={name}
-          //     navigation={navigation}
-          //   />;
-          // }
-        />
-      </View>
-    </Background>
-  );
+  componentDidMount() { 
+    this.getCalendarEvents();
+  }
+
+  getCalendarEvents() {
+    axios.get('https://clients6.google.com/calendar/v3/calendars/ufabcpratodos@gmail.com/events?calendarId=ufabcpratodos%40gmail.com&singleEvents=true&timeZone=America%2FSao_Paulo&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2019-09-10T00%3A00%3A00-03%3A00&timeMax=2019-10-15T00%3A00%3A00-03%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs')
+    .then((response) => {
+      if (
+        response.data &&
+        response.data.items
+      ) {
+        this.setState({
+          calendarEvents: this.formatEvents(response.data.items)
+        })
+      }
+    })
+    .catch((error) => {
+      // handle error
+      console.log(error);
+    })
+    .finally(() => {
+      this.setState({
+        isLoading: false
+      })
+    });
+  }
+
+  formatEvents(events) {
+    return events.map(({summary, location, description, start, end, id}) => {
+      return {
+        id,
+        summary, 
+        location,
+        description,
+        start: start.dateTime,
+        end: end.dateTime,
+      }
+    })
+  }
+
+  render() {
+    const {
+      isLoading,
+      calendarEvents
+    } = this.state;
+
+    if (isLoading) {
+      return <Text>Carregando...</Text>
+    }
+
+    return (
+      <Background>
+        <View style={styles.container}>
+          <FlatList
+            keyExtractor={event => event.id}
+            data={calendarEvents}
+            renderItem={({ item }) => (
+               <EventItem {
+                 ...{
+                   ...item,
+                   navigation: this.props.navigation
+                }
+              } />
+            )}
+          />
+        </View>
+      </Background>
+    );
+  }
 };
 
 const styles = StyleSheet.create({

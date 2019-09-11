@@ -1,25 +1,9 @@
-<<<<<<< HEAD
 {
+  "devToolsPort": 19002,
   "expoServerPort": 19000,
+  "packagerPort": 19003,
+  "packagerPid": 738,
   "expoServerNgrokUrl": "https://4x-fdk.anonymous.app-ufabc-para-todos.exp.direct",
   "packagerNgrokUrl": "https://packager.4x-fdk.anonymous.app-ufabc-para-todos.exp.direct",
-  "ngrokPid": 30075,
-  "devToolsPort": 19002,
-  "packagerPort": 19003,
-  "packagerPid": 30048
+  "ngrokPid": 762
 }
-=======
-<<<<<<< HEAD
-{
-  "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
-}
-=======
-{}
->>>>>>> 8671bd148a1318ca3338dfe309653c6ff37b5df7
->>>>>>> 04f249f6070dda9a2e046db999ef9abae1fd3b4e

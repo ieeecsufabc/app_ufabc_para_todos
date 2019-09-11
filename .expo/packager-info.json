@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 14613,
-  "expoServerNgrokUrl": "https://x4-jn8.anonymous.app-ufabc-para-todos.exp.direct",
-  "packagerNgrokUrl": "https://packager.x4-jn8.anonymous.app-ufabc-para-todos.exp.direct",
-  "ngrokPid": 14647
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

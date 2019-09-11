@@ -18,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
             style={styles.button}
             onPress={() => navigation.navigate('List')}
           >
-            <Text style={styles.stext}>
+            <Text style={styles.buttontext}>
               Estandes
             </Text>
           </TouchableOpacity>
@@ -26,7 +26,7 @@ const HomeScreen = ({ navigation }) => {
             style={styles.button}
             onPress={() => navigation.navigate('Eventos')}
           >
-            <Text style={styles.stext}>
+            <Text style={styles.buttontext}>
               Eventos
             </Text>
           </TouchableOpacity>
@@ -34,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
             style={styles.button}
             onPress={() => navigation.navigate('Mapas')}
           >
-            <Text style={styles.stext}>
+            <Text style={styles.buttontext}>
               Mapas
             </Text>
           </TouchableOpacity>
@@ -42,11 +42,12 @@ const HomeScreen = ({ navigation }) => {
             style={styles.button}
             onPress={() => navigation.navigate('ComoChegar')}
           >
-            <Text style={styles.stext}>
+            <Text style={styles.buttontext}>
               Como chegar
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
+            style={styles.button2}
             onPress={() => navigation.navigate('About')}
           >
             <Text style={styles.sobre}>
@@ -86,12 +87,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button2:{
+    backgroundColor: '#2c6633',
+    height: 40,
+    width: '46%',
+    flex: 0,
+    marginBottom: 10,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   boxbutton: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around'
   },
-  stext: {
+  buttontext: {
     position: 'relative',
     textAlign: "center",
     fontSize: 25,
@@ -100,14 +111,16 @@ const styles = StyleSheet.create({
   textbox: {
     position: 'relative',
     flex:0,
-    textAlign: "center",
+    justifyContent: 'center',
+    textAlign: "center"
   },
   sobre: {
     position: 'relative',
+    justifyContent: 'center',
     textAlign: "center",
-    marginTop:10,
+    //marginTop:10,
     fontSize: 15,
-    color: '#752bff'
+    color: 'white'
   },
 
 });

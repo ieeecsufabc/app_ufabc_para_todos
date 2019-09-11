@@ -22,8 +22,47 @@ const IEEEScreen = ({ navigation }) => {
     <Text style={styles.stext}>
     Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
     </Text>
-    <View style={styles.Odin}>
+    <View style={styles.boxbutton}>
+      <TouchableOpacity 
+        //style={styles.button}
+        onPress={() => {
+          var url = "https://pt-br.facebook.com/RamoUFABC/";
+          Linking.canOpenURL(url).then(supported => {
+            if (!supported) {
+              console.log('Cant handle url: ' + url);
+            } else {
+              return Linking.openURL(url);
+            }
+          }).catch(err => console.error('An error occurred', err)); 
+        }}
+      >
+        <ScaledImg
+          source={require('../assets/facebook-icone.png')}
+          width={Dimensions.get('window').width * .3}
+        />
+      </TouchableOpacity>
+
+      <TouchableOpacity 
+        //style={styles.button}
+        onPress={() => {
+          var url = "https://www.instagram.com/ieeeufabc/?hl=pt";
+          Linking.canOpenURL(url).then(supported => {
+            if (!supported) {
+              console.log('Cant handle url: ' + url);
+            } else {
+              return Linking.openURL(url);
+            }
+          }).catch(err => console.error('An error occurred', err)); 
+        }}
+      >
+        <ScaledImg
+          source={require('../assets/instagram-icone.png')}
+          width={Dimensions.get('window').width * .3}
+        />
+      </TouchableOpacity>
+
     </View>
+
     </ScrollView>
     </Background>
   );

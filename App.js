@@ -1,3 +1,4 @@
+import React from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './src/HomeScreen';
 import ListScreen from './src/ListScreen';
@@ -32,4 +33,10 @@ const navigator = createStackNavigator(
   }
 );
 
-export default createAppContainer(navigator);
+const AppContainer = createAppContainer(navigator);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}

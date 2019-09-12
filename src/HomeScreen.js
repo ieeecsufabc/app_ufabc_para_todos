@@ -19,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('List')}
           >
             <Text style={styles.buttontext}>
-              Estandes
+              Lista de estandes
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -27,7 +27,7 @@ const HomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('Eventos')}
           >
             <Text style={styles.buttontext}>
-              Eventos
+              Programação
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -35,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('Mapas')}
           >
             <Text style={styles.buttontext}>
-              Mapas
+              Mapa do evento
             </Text>
           </TouchableOpacity>
           <TouchableOpacity

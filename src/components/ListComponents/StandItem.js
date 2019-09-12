@@ -5,16 +5,21 @@ import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 const StandItem = ({ title, standNumber, top, left, width, height, builder, navigation }) => {
     return (
         <View style={styles.boxStyle}>
-            <Text style={{ 
-                ...styles.boxTitle,
-                ...styles.purpleText
-            }}
-            >{title}</Text>
+            <Text 
+                style={{ 
+                    ...styles.purpleText,
+                    ...styles.boxTitle,
+                }}
+            >
+                {title}
+            </Text>
             <View style={styles.boxLocation}>
                 <View style={styles.boxLocationName}>
                     <Text style={styles.purpleText}>
-                        {Number.isInteger(standNumber) ? `Estande ${standNumber}` : standNumber}</Text>
-                    <Text style={styles.purpleText}>{builder}</Text>
+                        {builder}
+                        {" - "}
+                        {Number.isInteger(parseInt(standNumber)) ? `Estande ${standNumber}` : standNumber}
+                    </Text>
                 </View>
                 <View>
                     <TouchableOpacity 
@@ -68,10 +73,12 @@ const styles = StyleSheet.create({
         fontFamily: 'IsidoraSansAlt-Bold',
         paddingVertical: 5,
         fontWeight: "bold",
+        fontSize: 14
     },
     purpleText: {
         fontFamily: 'IsidoraSansAlt-Bold',
-        color: '#666'
+        color: '#666',
+        fontSize: 12
     }
 });
 

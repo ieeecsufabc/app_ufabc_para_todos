@@ -13,38 +13,38 @@ class EventsScreen extends React.Component {
     }
   }
 
-  componentDidMount() { 
+  componentDidMount() {
     this.getCalendarEvents();
   }
 
   getCalendarEvents() {
     axios.get('https://clients6.google.com/calendar/v3/calendars/ufabcpratodos@gmail.com/events?calendarId=ufabcpratodos%40gmail.com&singleEvents=true&timeZone=America%2FSao_Paulo&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2019-09-10T00%3A00%3A00-03%3A00&timeMax=2019-10-15T00%3A00%3A00-03%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs')
-    .then((response) => {
-      if (
-        response.data &&
-        response.data.items
-      ) {
-        this.setState({
-          calendarEvents: this.formatEvents(response.data.items)
-        })
-      }
-    })
-    .catch((error) => {
-      // handle error
-      console.log(error);
-    })
-    .finally(() => {
-      this.setState({
-        isLoading: false
+      .then((response) => {
+        if (
+          response.data &&
+          response.data.items
+        ) {
+          this.setState({
+            calendarEvents: this.formatEvents(response.data.items)
+          })
+        }
       })
-    });
+      .catch((error) => {
+        // handle error
+        console.log(error);
+      })
+      .finally(() => {
+        this.setState({
+          isLoading: false
+        })
+      });
   }
 
   formatEvents(events) {
-    return events.map(({summary, location, description, start, end, id}) => {
+    return events.map(({ summary, location, description, start, end, id }) => {
       return {
         id,
-        summary, 
+        summary,
         location,
         description,
         start: start.dateTime,
@@ -60,7 +60,13 @@ class EventsScreen extends React.Component {
     } = this.state;
 
     if (isLoading) {
-      return <Text>Carregando...</Text>
+      return (
+        <Background>
+          <View style={styles.containerLoading}>
+            <Text style={styles.title}>Carregando...</Text>
+          </View>
+        </Background>
+      )
     }
 
     return (
@@ -70,10 +76,10 @@ class EventsScreen extends React.Component {
             keyExtractor={event => event.id}
             data={calendarEvents}
             renderItem={({ item }) => (
-               <EventItem {
-                 ...{
-                   ...item,
-                   navigation: this.props.navigation
+              <EventItem {
+                ...{
+                  ...item,
+                  navigation: this.props.navigation
                 }
               } />
             )}
@@ -93,6 +99,18 @@ const styles = StyleSheet.create({
     fontSize: 18,
     height: 44,
   },
+  containerLoading: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    position: 'relative',
+    fontFamily: 'ScriptoramaMarkdownJF',
+    textAlign: "center",
+    fontSize: 35,
+    color: '#752bff'
+  }
 });
 
 export default EventsScreen;

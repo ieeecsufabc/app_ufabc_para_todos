@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://4x-fdk.anonymous.app-ufabc-para-todos.exp.direct",
-  "packagerNgrokUrl": "https://packager.4x-fdk.anonymous.app-ufabc-para-todos.exp.direct",
-  "ngrokPid": 16896
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

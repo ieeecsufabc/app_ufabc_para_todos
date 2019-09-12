@@ -84,7 +84,7 @@ const blocoAStands = [
 const blocoABalcoes = [
         {
                 name: "B1",
-                description: "1) IEEE\n2) Grupo de Pesquisa em Segurança, Violência e Justiça-SEVIJU\n3) Clube de Anime UFABC\n4) OSA-UFABC STUDENT CHAPTER",
+                description: "1) IEEE\n2) Programa de Pós Graduação em Ciências Humanas e Sociais\n3) Clube de Anime UFABC\n4) OSA-UFABC STUDENT CHAPTER",
                 top: '59.12%',
                 left: '59%',
                 width: '5.5%',

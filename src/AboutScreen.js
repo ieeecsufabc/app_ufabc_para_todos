@@ -19,7 +19,7 @@ const AboutScreen = ({ navigation }) => {
             O que é o UFABC PRA TODOS?
         </Text>
         <Text style={styles.stext}>
-          Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\n           Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        O evento conta com estandes que divulgam os cursos da universidade e também que apresentam os projetos pedagógicos da universidade e as pró-reitorias, além de atividades culturais, oficinas, palestras, visitas monitoradas ao espaço físico e exposições sobre as mais diversas atividades realizadas na Universidade.
         </Text>
 
         <View style={styles.boxbutton}>

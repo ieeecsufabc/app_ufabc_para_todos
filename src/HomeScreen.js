@@ -103,18 +103,21 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   buttontext: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
-    fontSize: 25,
+    fontSize: 23,
     color: 'white'
   },
   textbox: {
     position: 'relative',
+    fontFamily: 'IsidoraSansAlt-Bold',
     flex:0,
     justifyContent: 'center',
     textAlign: "center"
   },
   sobre: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     justifyContent: 'center',
     textAlign: "center",

@@ -10,7 +10,7 @@ import MapsScreen from './src/MapsScreen';
 import AboutScreen from './src/AboutScreen';
 import IEEEScreen from './src/IEEEScreen';
 import ItinerarioScreen from './src/ItinerarioScreen';
-import {Font} from 'expo';
+import * as Font from 'expo-font';
 
 const navigator = createStackNavigator(
   {
@@ -36,7 +36,22 @@ const navigator = createStackNavigator(
 const AppContainer = createAppContainer(navigator);
 
 export default class App extends React.Component {
-  render() {
-    return <AppContainer />;
+  state = {
+    fontLoaded: false,
+  };
+  async componentDidMount() {
+    await Font.loadAsync({
+      'ScriptoramaMarkdownJF': require('./assets/fonts/ScriptoramaMarkdownJFRegular.ttf'),
+      'IsidoraSansAlt-Bold': require('./assets/fonts/IsidoraSansAlt-Bold.ttf'),
+
+    });
+    this.setState({ fontLoaded: true });
   }
+  
+  render() {
+    if (!this.state.fontLoaded) {
+    return null; //aqui poderia adicionar algum tipo de loading
+    }
+      return <AppContainer />;
+    }
 }

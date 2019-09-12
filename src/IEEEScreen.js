@@ -24,7 +24,7 @@ const IEEEScreen = ({ navigation }) => {
     </Text>
     <View style={styles.boxbutton}>
       <TouchableOpacity
-        //style={styles.button}
+        style={styles.button}
         onPress={() => {
           var url = "https://pt-br.facebook.com/RamoUFABC/";
           Linking.canOpenURL(url).then(supported => {
@@ -38,12 +38,12 @@ const IEEEScreen = ({ navigation }) => {
       >
         <ScaledImg
           source={require('../assets/facebook-icone.png')}
-          width={Dimensions.get('window').width * .3}
+          width={Dimensions.get('window').width * .25}
         />
       </TouchableOpacity>
 
       <TouchableOpacity
-        //style={styles.button}
+        style={styles.button}
         onPress={() => {
           var url = "https://www.instagram.com/ieeeufabc/?hl=pt";
           Linking.canOpenURL(url).then(supported => {
@@ -57,7 +57,7 @@ const IEEEScreen = ({ navigation }) => {
       >
         <ScaledImg
           source={require('../assets/instagram-icone.png')}
-          width={Dimensions.get('window').width * .3}
+          width={Dimensions.get('window').width * .25}
         />
       </TouchableOpacity>
 
@@ -77,13 +77,11 @@ const styles = StyleSheet.create({
   },
   button: {
     position:'relative',
-    backgroundColor: '#806cfa',
+    //backgroundColor: '#806cfa',
     height: 90,
     width: '46%',
     flex: 1,
-    marginTop:10,
-    marginBottom: 10,
-    borderRadius: 20,
+    marginTop: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -94,16 +92,17 @@ const styles = StyleSheet.create({
   },
   stext: {
     position: 'relative',
+    fontFamily: 'IsidoraSansAlt-Bold',
     textAlign: "center",
     fontSize: 25,
     color: 'white'
   },
   title:{
     position:'relative',
-    //fontFamily: 'Scriptorama Markdown JF Regular',
+    fontFamily: 'ScriptoramaMarkdownJF',
     textAlign:"center",
     fontSize: 45,
-    color:'black'
+    color:'#752bff'
   }
 });
 

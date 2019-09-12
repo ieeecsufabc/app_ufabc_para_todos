@@ -48,18 +48,21 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   stext: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
     fontSize: 25,
     color: 'white'
   },
   bigText:{
+    fontFamily: 'IsidoraSansAlt-Bold',
     position:'relative',
     textAlign:"center",
     fontSize: 45,
     color:'black'
   },
   infoText: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
     fontSize: 20,

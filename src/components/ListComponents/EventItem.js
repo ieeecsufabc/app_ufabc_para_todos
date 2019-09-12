@@ -84,13 +84,16 @@ const styles = StyleSheet.create({
         borderRadius: 5
     },
     verNoMapaText: {
-        color: '#fff'
+        color: '#fff',
+        fontFamily: 'IsidoraSansAlt-Bold'
     },
     boxTitle: {
+        fontFamily: 'IsidoraSansAlt-Bold',
         paddingVertical: 5,
         fontWeight: "bold",
     },
     purpleText: {
+        fontFamily: 'IsidoraSansAlt-Bold',
         color: '#666'
     }
 });

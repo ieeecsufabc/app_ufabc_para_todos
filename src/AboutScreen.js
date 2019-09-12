@@ -24,7 +24,7 @@ const AboutScreen = ({ navigation }) => {
 
         <View style={styles.boxbutton}>
           <TouchableOpacity 
-          //style={styles.button}
+          style={styles.button}
           onPress={() => {
             var url = "https://www.facebook.com/events/785951678423517/?ti=wa";
             Linking.canOpenURL(url).then(supported => {
@@ -38,7 +38,7 @@ const AboutScreen = ({ navigation }) => {
           >
           <ScaledImg
             source={require('../assets/facebook-icone.png')}
-            width={Dimensions.get('window').width * .3}
+            width={Dimensions.get('window').width * .25}
           />
           </TouchableOpacity>
           
@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
     flex: 1
   },
   button: {
-    backgroundColor: '#2c6633',
-    height: 70,
-    width: '36%',
-    flex: 0,
-    marginBottom: 10,
-    borderRadius: 20,
+    position:'relative',
+    //backgroundColor: '#806cfa',
+    height: 90,
+    width: '46%',
+    flex: 1,
+    marginTop: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   stext: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
     fontSize: 25,
@@ -98,9 +99,10 @@ const styles = StyleSheet.create({
   },
   title:{
     position:'relative',
+    fontFamily: 'ScriptoramaMarkdownJF',
     textAlign:"center",
     fontSize: 45,
-    color:'black'
+    color:'#752bff'
   }
 });
 

@@ -111,17 +111,20 @@ const styles = StyleSheet.create({
   },
   stext: {
     position: 'relative',
+    fontFamily: 'IsidoraSansAlt-Bold',
     textAlign: "center",
     fontSize: 25,
     color: 'white'
   },
   bigText:{
     position:'relative',
+    fontFamily: 'IsidoraSansAlt-Bold',
     textAlign:"center",
     fontSize: 40,
     color:'black'
   },
   infoText: {
+    fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
     fontSize: 18,

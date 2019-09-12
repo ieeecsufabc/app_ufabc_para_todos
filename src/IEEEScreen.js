@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
   },
   title:{
     position:'relative',
+    //fontFamily: 'Scriptorama Markdown JF Regular',
     textAlign:"center",
     fontSize: 45,
     color:'black'

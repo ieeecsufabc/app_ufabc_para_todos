@@ -9,6 +9,7 @@ import MapsScreen from './src/MapsScreen';
 import AboutScreen from './src/AboutScreen';
 import IEEEScreen from './src/IEEEScreen';
 import ItinerarioScreen from './src/ItinerarioScreen';
+import {Font} from 'expo';
 
 const navigator = createStackNavigator(
   {

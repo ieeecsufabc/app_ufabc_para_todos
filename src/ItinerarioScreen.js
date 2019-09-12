@@ -10,11 +10,10 @@ const ItinerarioScreen = ({ navigation }) => {
     <Background >
       <ScrollView>
        
-      <Text>APLICAR ITINERÁRIO</Text>
       <View style={styles.Odin}>
         <ScaledImg
-          source={require('../assets/foto-mapa.png')}
-          width={Dimensions.get('window').width * .7}
+          source={require('../assets/HORARIOS-1.png')}
+          width={Dimensions.get('window').width * .95}
         />
         </View>
         </ScrollView>
@@ -28,7 +27,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     flex: 1,
-    fontSize:40
+    fontSize:40,
+    marginTop: 25
   },
   button: {
     position:'relative',
@@ -53,22 +53,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 25,
     color: 'white'
-  },
-  bigText:{
-    fontFamily: 'IsidoraSansAlt-Bold',
-    position:'relative',
-    textAlign:"center",
-    fontSize: 45,
-    color:'black'
-  },
-  infoText: {
-    fontFamily: 'IsidoraSansAlt-Bold',
-    position: 'relative',
-    textAlign: "center",
-    fontSize: 20,
-    color: 'black',
-    width:'90%'
-  },
+  }
 
 });
 

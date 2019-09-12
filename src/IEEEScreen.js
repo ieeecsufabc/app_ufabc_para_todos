@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     fontFamily: 'ScriptoramaMarkdownJF',
     textAlign:"center",
     fontSize: 45,
-    color:'#752bff'
+    color:'#752bff'  
   }
 });
 

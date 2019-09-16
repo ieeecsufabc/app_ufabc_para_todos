@@ -19,6 +19,9 @@ const AboutScreen = ({ navigation }) => {
             O que é o UFABC PRA TODOS?
         </Text>
         <Text style={styles.stext}>
+        O evento UFABC para Todos é realizado anualmente pela Universidade Federal do ABC e tem como objetivo principal abrir as portas da Instituição para a comunidade, em especial aos alunos do 3º ano do Ensino Médio, de forma que todos possam conhecer um pouco mais sobre a Universidade. Em 2019, o evento terá sua décima edição no dia 26 de setembro no campus Santo André da UFABC, localizado na Avenida dos Estados, nº 5001, bairro Santa Terezinha, Santo André/SP.
+        </Text>
+        <Text style={styles.stext}>
         O evento conta com estandes que divulgam os cursos da universidade e também que apresentam os projetos pedagógicos da universidade e as pró-reitorias, além de atividades culturais, oficinas, palestras, visitas monitoradas ao espaço físico e exposições sobre as mais diversas atividades realizadas na Universidade.
         </Text>
 

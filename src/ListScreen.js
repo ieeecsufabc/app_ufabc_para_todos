@@ -9,7 +9,7 @@ const ListScreen = ({ navigation }) => {
     <Background>
       <View style={styles.container}>
         <FlatList
-          // keyExtractor={event => event.name}
+          keyExtractor={(_item, index) => index.toString()}
           data={allMapItems}
           renderItem={({ item: { name, description, builder, top, left, width, height } }) => {
             return <StandItem

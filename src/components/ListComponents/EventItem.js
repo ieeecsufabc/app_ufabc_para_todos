@@ -11,15 +11,18 @@ const minTwoDigits = (n) => {
 }
 
 const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    const minutes = minTwoDigits(date.getMinutes());
-    const hour = minTwoDigits(date.getHours());
+    try {
+        const date = new Date(dateString);
+        const minutes = minTwoDigits(date.getMinutes());
+        const hour = minTwoDigits(date.getHours());
+        return hour + ':' + minutes + 'h';
+    } catch (e) {}
 
-    return hour + ':' + minutes + 'h';
+    return ''
 }
 
 const isStand = (locationName) => {
-    return locationName.includes('Stand ');
+    return locationName && locationName.includes('Stand ');
 }
 
 const getStandName = (locationName) => {

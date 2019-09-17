@@ -27,11 +27,11 @@ const isStand = (locationName) => {
 
 const getStandName = (locationName) => {
     try {
-        locationName = locationName.trim().replace(/\s\s+/g, ' ');
-        locationsArray = locationName.split(' ');
-        if (locationsArray && locationsArray[1]) {
-            return locationsArray[1]
-        }    
+        const cleanLocationName = locationName
+                            .trim()
+                            .replace(/\s\s+/g, ' '); //remove duplicate spaces
+        
+        return cleanLocationName.split('Stand ')[1].split(' ')[0]; //get first word after stand
     } catch (e) {}
 
     return null;
@@ -63,7 +63,7 @@ const EventItem = ({summary, location, description, start, end, id, navigation})
                                     <Text style={styles.purpleText}>{eventData.builder + " - "}</Text>
                                 )}
         
-                                {isStand(location) ? `Estande ${getStandName(location)}` : location}
+                                {eventData ? `Estande ${getStandName(location)}` : location}
                             </Text>
                         </View>
                     </View>
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     },
     boxTitle: {
         fontFamily: 'IsidoraSansAlt-Bold',
-        paddingVertical: 5,
+        marginBottom: 10,
         fontWeight: "bold",
         fontSize: 14
     },
@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
     },
     boxInfo: {
         flexDirection: 'column',
+        justifyContent: 'space-between',
         width: '70%'
     },
     boxTime: {

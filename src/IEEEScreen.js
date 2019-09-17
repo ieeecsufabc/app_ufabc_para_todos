@@ -20,7 +20,7 @@ const IEEEScreen = ({ navigation }) => {
         </Text>
     </View>
     <Text style={styles.stext}>
-    Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    O IEEE (lê-se I,3,É) é um instituto com profissionais ao redor de todo mundo desenvolvendo pesquisas e tecnologias em diversas áreas. Nas universidades o IEEE está presente em mais de 140 países e tem diversas sedes no Brasil, sendo uma na Universidade Federal do ABC. Aqui, desenvolvemos projetos, cursos e atividades nas áreas de engenharia da UFABC que são Aeroespacial, Biomédica, Energia, Gestão, Instrumentação Automação e Robótica, Materiais e Ciências da Computação. Para saber mais nos siga nas redes sociais.
     </Text>
     <View style={styles.boxbutton}>
       <TouchableOpacity
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     height: 90,
     width: '46%',
     flex: 1,
+    marginBottom: 20,
     marginTop: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -94,12 +95,16 @@ const styles = StyleSheet.create({
     position: 'relative',
     fontFamily: 'IsidoraSansAlt-Bold',
     textAlign: "center",
+    lineHeight: 23,
+    marginHorizontal:10,
+    marginTop: 20,
     fontSize: 25,
     color: 'white'
   },
   title:{
     position:'relative',
     fontFamily: 'ScriptoramaMarkdownJF',
+    marginTop: 20,
     textAlign:"center",
     fontSize: 45,
     color:'#752bff'  

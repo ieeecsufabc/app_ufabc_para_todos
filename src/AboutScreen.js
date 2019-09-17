@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
     height: 90,
     width: '46%',
     flex: 1,
+    marginBottom: 30,
     marginTop: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -97,12 +98,16 @@ const styles = StyleSheet.create({
     fontFamily: 'IsidoraSansAlt-Bold',
     position: 'relative',
     textAlign: "center",
-    fontSize: 25,
+    fontSize: 22,
+    lineHeight: 23,
+    marginHorizontal:10,
+    marginTop: 20,
     color: 'white'
   },
   title:{
     position:'relative',
     fontFamily: 'ScriptoramaMarkdownJF',
+    marginTop: 20,
     textAlign:"center",
     fontSize: 45,
     color:'#752bff'

@@ -5,7 +5,7 @@ import Marker from './Marker';
 import DefaultMaker from '../DefaultMaker';
 import { ginasioBalcoes, ginasioStands } from '../../data/markers';
 
-const mapImage = require('../../../assets/0002.jpg');
+const mapImage = require('../../../assets/0002.png');
 
 class Map extends Component {
   onEventClick = (name, description) => {

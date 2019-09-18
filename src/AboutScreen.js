@@ -46,7 +46,7 @@ const AboutScreen = ({ navigation }) => {
           </TouchableOpacity>
           
           <TouchableOpacity
-          style={styles.button}
+          style={styles.buttonSite}
           onPress={() => {
             var url = "http://paratodos.ufabc.edu.br/";
             Linking.canOpenURL(url).then(supported => {
@@ -80,13 +80,25 @@ const styles = StyleSheet.create({
   },
   button: {
     position:'relative',
-    //backgroundColor: '#806cfa',
-    height: 90,
+    backgroundColor: '#806cfa',
+    height: 80,
     width: '20%',
     flex: 1,
-    marginHorizontal:20,
+    marginHorizontal:50,
     marginBottom: 30,
     marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonSite: {
+    position:'relative',
+    backgroundColor: '#806cfa',
+    height: 60,
+    width: '20%',
+    flex: 1,
+    marginHorizontal:50,
+    marginBottom: 30,
+    marginTop: 30,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -102,7 +114,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 23,
     marginHorizontal:10,
-    marginTop: 20,
+    marginVertical: 10,
     color: 'white'
   },
   title:{

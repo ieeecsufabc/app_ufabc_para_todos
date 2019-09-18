@@ -42,10 +42,6 @@ const HowToGetScreen = ({ navigation }) => {
             <Text style={styles.infoText}>
               *Descer a escada dentro do terminal
             </Text>
-            <ScaledImg
-              source={require('../assets/foto-mapa.png')}
-              width={Dimensions.get('window').width * .9}
-            />
           </View>
 
         <View style={styles.Odin}>

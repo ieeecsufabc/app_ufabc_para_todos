@@ -7,33 +7,19 @@ const MapsScreen = ({ navigation }) => {
   return (
     <Background>
       <View style={styles.Odin}>  
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate('BlocoA')}
-          >
-          <ScaledImg
-            source={require('../assets/foto-mapa.png')}
-            width={Dimensions.get('window').width * .8}
-          />
-          <Text style={styles.stext}>
-            Bloco A
-          </Text>
-
-        </TouchableOpacity>
+        <ScaledImg
+          source={require('../assets/ufabc-View2.png')}
+          width={Dimensions.get('window').width}
+        />
 
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Ginasio')}
-          >
-          <ScaledImg
-            source={require('../assets/foto-mapa.png')}
-            width={Dimensions.get('window').width * .8}
-          />
+        >
           <Text style={styles.stext}>
-              Ginásio
+              Ginásioo
           </Text>
         </TouchableOpacity>
-
       </View>
     </Background>
   );
@@ -48,13 +34,13 @@ const styles = StyleSheet.create({
     flex: 1
   },
   button: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'red',
     height: '28%',
     width: '80%',
     flex: 0,
     marginBottom: 10,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   boxbutton: {
     flexDirection: 'row',

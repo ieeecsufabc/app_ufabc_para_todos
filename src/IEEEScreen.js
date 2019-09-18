@@ -20,7 +20,7 @@ const IEEEScreen = ({ navigation }) => {
         </Text>
     </View>
     <Text style={styles.stext}>
-    O IEEE (lê-se I,3,É) é um instituto com profissionais ao redor de todo mundo desenvolvendo pesquisas e tecnologias em diversas áreas. Nas universidades o IEEE está presente em mais de 140 países e tem diversas sedes no Brasil, sendo uma na Universidade Federal do ABC. Aqui, desenvolvemos projetos, cursos e atividades nas áreas de engenharia da UFABC que são Aeroespacial, Biomédica, Energia, Gestão, Instrumentação Automação e Robótica, Materiais e Ciências da Computação. Para saber mais nos siga nas redes sociais.
+    O IEEE (lê-se I,3,É) é um instituto com profissionais ao redor de todo mundo desenvolvendo pesquisas e tecnologias em diversas áreas. Nas universidades o IEEE está presente em mais de 140 países e tem diversas sedes no Brasil, sendo uma na Universidade Federal do ABC. Aqui, desenvolvemos projetos, cursos e atividades nas áreas de engenharia da UFABC que são Aeroespacial, Biomédica, Energia, Gestão, Instrumentação Automação e Robótica, Materiais e Ciências da Computação. Para saber mais, siga-nos nas redes sociais.
     </Text>
     <View style={styles.boxbutton}>
       <TouchableOpacity
@@ -38,7 +38,7 @@ const IEEEScreen = ({ navigation }) => {
       >
         <ScaledImg
           source={require('../assets/facebook-icone.png')}
-          width={Dimensions.get('window').width * .25}
+          width={Dimensions.get('window').width * .20}
         />
       </TouchableOpacity>
 
@@ -57,7 +57,7 @@ const IEEEScreen = ({ navigation }) => {
       >
         <ScaledImg
           source={require('../assets/instagram-icone.png')}
-          width={Dimensions.get('window').width * .25}
+          width={Dimensions.get('window').width * .20}
         />
       </TouchableOpacity>
 
@@ -79,8 +79,9 @@ const styles = StyleSheet.create({
     position:'relative',
     //backgroundColor: '#806cfa',
     height: 90,
-    width: '46%',
+    width: '10%',
     flex: 1,
+    marginHorizontal:25,
     marginBottom: 20,
     marginTop: 20,
     alignItems: 'center',
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     marginHorizontal:10,
     marginTop: 20,
-    fontSize: 25,
+    fontSize: 16,
     color: 'white'
   },
   title:{

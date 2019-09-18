@@ -37,38 +37,48 @@ const HowToGetScreen = ({ navigation }) => {
         Transporte público
       </Text>
           <View style={styles.Odin}>
-        <ScaledImg
-          source={require('../assets/foto-mapa.png')}
-          width={Dimensions.get('window').width * .7}
-        />
-        <Text style={styles.infoText}>*Pegar o trem até a estação Celso Daniel
-        </Text>
+            <Text style={styles.infoText}>*Pegar o trem até a estação Celso Daniel
+            </Text>
+            <Text style={styles.infoText}>
+              *Descer a escada dentro do terminal
+            </Text>
+            <ScaledImg
+              source={require('../assets/foto-mapa.png')}
+              width={Dimensions.get('window').width * .7}
+            />
+          </View>
+
+        <View style={styles.Odin}>
         <Text style={styles.infoText}>
-          *Descer a escada dentro do terminal
-        </Text>
+              *Procurar a rampa de acesso ao ponto do fretado
+            </Text>
+        <ScaledImg
+          source={require('../assets/foto-antes-corredor.jpeg')}
+          width={Dimensions.get('window').width * .7}
+        />
+        
         </View>
 
         <View style={styles.Odin}>
+          <Text style={styles.infoText}>*Vire a direita e suba a rampa</Text>
         <ScaledImg
-          source={require('../assets/foto-mapa.png')}
+          source={require('../assets/foto-entrada-corredor.jpeg')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text style={styles.infoText}>*Vire a direita e suba a rampa</Text>
+        <ScaledImg
+          source={require('../assets/foto-corredor.jpeg')}
+          width={Dimensions.get('window').width * .7}
+        />
+        
         </View>
 
         <View style={styles.Odin}>
+          <Text style={styles.infoText}>*Você pode escolher entre ir de fretado ou andando</Text>
         <ScaledImg
-          source={require('../assets/foto-mapa.png')}
+          source={require('../assets/foto-ponto.jpeg')}
           width={Dimensions.get('window').width * .7}
         />
-        <Text style={styles.infoText}>*Você pode escolher entre ir de fretado ou andando</Text>
-        </View>
-
-        <View style={styles.Odin}>
-        <ScaledImg
-          source={require('../assets/foto-mapa.png')}
-          width={Dimensions.get('window').width * .7}
-        />
+        
         <TouchableOpacity
             style={styles.button}
             onPress={() => navigation.navigate('Itinerario')}

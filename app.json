@@ -29,7 +29,8 @@
     },
     "android": {
       "package": "com.ufabc.ufabcparatodos",
-      "permissions": []
+      "permissions": [],
+      "versionCode": 2
     }
   }
 }

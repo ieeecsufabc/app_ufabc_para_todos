@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Alert, Image, SafeAreaView, Dimensions} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
-import Marker from './Marker';
+import Marker from '../Marker';
 import DefaultMaker from '../DefaultMaker';
 import { ginasioBalcoes, ginasioStands } from '../../data/markers';
 
@@ -54,7 +54,6 @@ class Map extends Component {
             flex: 0,
             width: windowWidth,
             height: imageHeight,
-            marginRight: 50,
             justifyContent: 'center'
           }}
         >
@@ -63,7 +62,6 @@ class Map extends Component {
               flex:0,
               width: windowWidth,
               height: imageHeight,
-              marginRight: 50,
               resizeMode: 'contain'
             }}
             source={mapImage}

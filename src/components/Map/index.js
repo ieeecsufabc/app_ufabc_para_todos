@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Alert, Image, SafeAreaView, Dimensions} from 'react-native';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
-import Marker from './Marker';
+import Marker from '../Marker';
 import DefaultMaker from '../DefaultMaker';
 import { blocoABalcoes, blocoAStands } from '../../data/markers';
 

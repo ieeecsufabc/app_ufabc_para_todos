@@ -29,10 +29,12 @@ export default class ScaledImage extends Component {
     }
 
     render() {
+        const style = this.props.style || {};
+
         return (
             <Image
                 source={this.props.source}
-                style={{ height: this.state.height, width: this.state.width }}
+                style={{ height: this.state.height, width: this.state.width, ...style }}
             />
         );
     }

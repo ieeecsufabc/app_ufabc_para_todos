@@ -60,6 +60,9 @@ const HowToGetScreen = ({ navigation }) => {
         <ScaledImg
           source={require('../assets/foto-entrada-corredor.jpeg')}
           width={Dimensions.get('window').width * .9}
+          style={{
+            marginBottom: 10
+          }}
         />
         <ScaledImg
           source={require('../assets/foto-corredor.jpeg')}

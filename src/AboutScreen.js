@@ -25,6 +25,24 @@ const AboutScreen = ({ navigation }) => {
           O evento conta com estandes que divulgam os cursos e que apresentam os projetos pedagógicos da universidade, além de atividades culturais, oficinas, palestras, visitas monitoradas ao espaço físico e exposições sobre diversas atividades realizadas na Universidade.
         </Text>
 
+        <TouchableOpacity
+            style={styles.buttonGreen}
+            onPress={() => {
+              var url = "http://paratodos.ufabc.edu.br/";
+              Linking.canOpenURL(url).then(supported => {
+                  if (!supported) {
+                      console.log('Cant handle url: ' + url);
+                  } else {
+                      return Linking.openURL(url);
+                  }
+              }).catch(err => console.error('An error occurred', err)); 
+          }}
+          >
+            <Text style={styles.buttonGreenText}>
+              Inscrição
+            </Text>
+          </TouchableOpacity>
+        
         <View style={styles.boxbutton}>
           <TouchableOpacity 
           style={styles.button}
@@ -90,6 +108,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  buttonGreen: {
+    position:'relative',
+    backgroundColor: '#2c6633',
+    height: 50,
+    width: '70%',
+    flex: 1,
+    marginTop:10,
+    marginBottom: 10,
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   buttonSite: {
     position:'relative',
     //backgroundColor: '#806cfa',
@@ -115,6 +145,13 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     marginHorizontal:10,
     marginVertical: 10,
+    color: 'white'
+  },
+  buttonGreenText: {
+    position: 'relative',
+    fontFamily: 'IsidoraSansAlt-Bold',
+    textAlign: "center",
+    fontSize: 25,
     color: 'white'
   },
   title:{

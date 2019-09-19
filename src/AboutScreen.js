@@ -28,7 +28,7 @@ const AboutScreen = ({ navigation }) => {
         <TouchableOpacity
             style={styles.buttonGreen}
             onPress={() => {
-              var url = "http://paratodos.ufabc.edu.br/";
+              var url = "http://paratodos.ufabc.edu.br/inscricao-de-escolas/";
               Linking.canOpenURL(url).then(supported => {
                   if (!supported) {
                       console.log('Cant handle url: ' + url);

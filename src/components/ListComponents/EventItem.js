@@ -10,9 +10,8 @@ const minTwoDigits = (n) => {
     return (n < 10 ? '0' : '') + n;
 }
 
-const formatDate = (dateString) => {
+const formatDate = (date) => {
     try {
-        const date = new Date(dateString);
         const minutes = minTwoDigits(date.getMinutes());
         const hour = minTwoDigits(date.getHours());
         return hour + ':' + minutes + 'h';

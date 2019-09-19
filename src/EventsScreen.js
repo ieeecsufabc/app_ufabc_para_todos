@@ -25,7 +25,7 @@ class EventsScreen extends React.Component {
           response.data.items
         ) {
           this.setState({
-            calendarEvents: this.formatEvents(response.data.items)
+            calendarEvents: this.sortEventsByDate(this.formatEvents(response.data.items))
           })
         }
       })
@@ -47,9 +47,19 @@ class EventsScreen extends React.Component {
         summary,
         location,
         description,
-        start: start.dateTime,
-        end: end.dateTime,
+        start: new Date(start.dateTime),
+        end: new Date(end.dateTime)
       }
+    })
+  }
+
+  sortEventsByDate(events) {
+    return [...events].sort((a, b) => {
+      if (a.start > b.start) {
+        return 1
+      }
+
+      return -1
     })
   }
 

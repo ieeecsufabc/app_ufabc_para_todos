@@ -9,7 +9,7 @@ import HowToGetScreen from './src/HowToGetScreen';
 import MapsScreen from './src/MapsScreen';
 import AboutScreen from './src/AboutScreen';
 import IEEEScreen from './src/IEEEScreen';
-import ItinerarioScreen from './src/ItinerarioScreen';
+import HorarioScreen from './src/HorarioScreen';
 import * as Font from 'expo-font';
 
 const navigator = createStackNavigator(
@@ -23,7 +23,7 @@ const navigator = createStackNavigator(
     ComoChegar: HowToGetScreen,
     About: AboutScreen,
     IEEE: IEEEScreen,
-    Itinerario: ItinerarioScreen,
+    Horario: HorarioScreen,
   },
   {
     initialRouteName: 'Home',

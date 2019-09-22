@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, StyleSheet, Text, Dimensions, TouchableOpacity, Linking } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import Background from './components/Background';
 import ScaledImg from './components/ScaledImg';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const ItinerarioScreen = ({ navigation }) => {
+const HorarioScreen = () => {
   return (
     
     <Background >
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ItinerarioScreen;
+export default HorarioScreen;

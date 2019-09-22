@@ -80,10 +80,10 @@ const HowToGetScreen = ({ navigation }) => {
         
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Itinerario')}
+            onPress={() => navigation.navigate('Horario')}
           >
             <Text style={styles.stext}>
-              Itinerário do fretado
+              Horário do fretado
             </Text>
           </TouchableOpacity>
         </View>

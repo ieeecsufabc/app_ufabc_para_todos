@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "0.3.0",
+    "version": "0.3.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -31,6 +31,8 @@
       "package": "com.ufabc.ufabcparatodos",
       "permissions": [],
       "versionCode": 2
-    }
+    },
+    "description": "Tenha acesso fácil às informações do evento UFABC para Todos\n\n-Lista de estandes\n-Lista de eventos\n-Mapas\n-Como chegar\n-Itinerário do fretado\n\nAplicativo desenvolvido por estudantes da entidade IEEE UFABC",
+    "githubUrl": "https://github.com/ieeecsufabc/app_ufabc_para_todos"
   }
 }
